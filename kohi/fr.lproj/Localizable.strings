@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  kohi
+
+  Created by Thibaut on 15/08/2019.
+  Copyright © 2019 Thibaut. All rights reserved.
+*/
+"Sign in with apple" = "Connecter avec Apple";
+"Add" = "Ajouter";
+"Add Sheet" = "Ajouter";
+"Edit Sheet" = "Modifier la fiche";
+"Logout" = "Déconnecter";
+"Tasting sheets" = "Fiches de dégustation";
+"Method" = "Méthode";
+"Name" = "Nom";
+"Grind size" = "Taille de la mouture";
+"Weight" = "Poids";
+"Cancel" = "Annuler";
+"Edit" = "Modifier";
+"COFFEE" = "CAFÉ";
+"METHOD" = "MÉTHODE";
+"grams" = "grammes";

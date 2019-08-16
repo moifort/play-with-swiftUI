@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1ABB702303318800026B65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB6F2303318800026B65 /* User.swift */; };
+		BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB71230332C600026B65 /* TastingSheet.swift */; };
+		BF1ABB742303338600026B65 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB732303338600026B65 /* Method.swift */; };
+		BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */; };
+		BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */; };
+		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
+		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
+		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
+		BF721742230561D800F0EC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF721744230561D800F0EC50 /* Localizable.strings */; };
+		BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683523007B0000865BCA /* AppDelegate.swift */; };
+		BFE9683823007B0000865BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683723007B0000865BCA /* SceneDelegate.swift */; };
+		BFE9683A23007B0000865BCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683923007B0000865BCA /* ContentView.swift */; };
+		BFE9683F23007B0200865BCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE9683E23007B0200865BCA /* Preview Assets.xcassets */; };
+		BFE9684223007B0200865BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9684023007B0200865BCA /* LaunchScreen.storyboard */; };
+		BFE9684D23007B0200865BCA /* kohiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9684C23007B0200865BCA /* kohiTests.swift */; };
+		BFE9685823007B0200865BCA /* kohiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9685723007B0200865BCA /* kohiUITests.swift */; };
+		BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686723007D3400865BCA /* TastingSheetStore.swift */; };
+		BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */; };
+		BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */; };
+		BFEF39172301E3F3001F9859 /* UserSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */; };
+		BFEF39192301FCE7001F9859 /* TastingSheetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */; };
+		BFEF391B230207CA001F9859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEF391A230207CA001F9859 /* Assets.xcassets */; };
+		BFEF391D23022312001F9859 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF391C23022312001F9859 /* UserStore.swift */; };
+		DD2493DB9B1CDF2E0AA80C3D /* Pods_kohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */; };
+		F6B39FF246F57CC84360D355 /* Pods_kohiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */; };
+		F8CD7A8D5C837DFBD3F95646 /* Pods_kohiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFE9684923007B0200865BCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE9682A23007B0000865BCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE9683123007B0000865BCA;
+			remoteInfo = kohi;
+		};
+		BFE9685423007B0200865BCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE9682A23007B0000865BCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE9683123007B0000865BCA;
+			remoteInfo = kohi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.release.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.release.xcconfig"; sourceTree = "<group>"; };
+		5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.release.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.debug.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.debug.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1ABB6F2303318800026B65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF1ABB71230332C600026B65 /* TastingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheet.swift; sourceTree = "<group>"; };
+		BF1ABB732303338600026B65 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetForm.swift; sourceTree = "<group>"; };
+		BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingSheetView.swift; sourceTree = "<group>"; };
+		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
+		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
+		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
+		BF7217452305620500F0EC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF7217462305622900F0EC50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BF7217472305626800F0EC50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BFE9683223007B0000865BCA /* kohi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kohi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE9683523007B0000865BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFE9683723007B0000865BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFE9683923007B0000865BCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE9683E23007B0200865BCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFE9684123007B0200865BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFE9684323007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE9684823007B0200865BCA /* kohiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE9684C23007B0200865BCA /* kohiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiTests.swift; sourceTree = "<group>"; };
+		BFE9684E23007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE9685323007B0200865BCA /* kohiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE9685723007B0200865BCA /* kohiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiUITests.swift; sourceTree = "<group>"; };
+		BFE9685923007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE9686723007D3400865BCA /* TastingSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetStore.swift; sourceTree = "<group>"; };
+		BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = TastingSheetRow.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 0; };
+		BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTastingSheetView.swift; sourceTree = "<group>"; };
+		BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsStore.swift; sourceTree = "<group>"; };
+		BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetListView.swift; sourceTree = "<group>"; };
+		BFEF391A230207CA001F9859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFEF391C23022312001F9859 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.debug.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.release.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE9682F23007B0000865BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2493DB9B1CDF2E0AA80C3D /* Pods_kohi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9684523007B0200865BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CD7A8D5C837DFBD3F95646 /* Pods_kohiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9685023007B0200865BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B39FF246F57CC84360D355 /* Pods_kohiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B85FCBCD037309F2090964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */,
+				52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */,
+				D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */,
+				EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */,
+				67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */,
+				5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8127D6CC1820FA963DDB0D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */,
+				E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */,
+				8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1ABB6E2303316200026B65 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ABB6F2303318800026B65 /* User.swift */,
+				BF1ABB71230332C600026B65 /* TastingSheet.swift */,
+				BF1ABB732303338600026B65 /* Method.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BFE9682923007B0000865BCA = {
+			isa = PBXGroup;
+			children = (
+				8127D6CC1820FA963DDB0D66 /* Frameworks */,
+				BFE9683423007B0000865BCA /* kohi */,
+				BFE9684B23007B0200865BCA /* kohiTests */,
+				BFE9685623007B0200865BCA /* kohiUITests */,
+				03B85FCBCD037309F2090964 /* Pods */,
+				BFE9683323007B0000865BCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE9683323007B0000865BCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9683223007B0000865BCA /* kohi.app */,
+				BFE9684823007B0200865BCA /* kohiTests.xctest */,
+				BFE9685323007B0200865BCA /* kohiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE9683423007B0000865BCA /* kohi */ = {
+			isa = PBXGroup;
+			children = (
+				BF654D282301C58C00173379 /* kohi.entitlements */,
+				BFE9684323007B0200865BCA /* Info.plist */,
+				BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */,
+				BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */,
+				BF3DA8012301902C00F71EAD /* LoginView.swift */,
+				BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */,
+				BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */,
+				BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */,
+				BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */,
+				BF4142882300BFEF00835453 /* TastingSheetView.swift */,
+				BFEF391A230207CA001F9859 /* Assets.xcassets */,
+				BF1ABB6E2303316200026B65 /* Domain */,
+				BFE9684023007B0200865BCA /* LaunchScreen.storyboard */,
+				BF721744230561D800F0EC50 /* Localizable.strings */,
+				BFE9683D23007B0200865BCA /* Preview Content */,
+				BFEB607A2306E55000BBBDE8 /* Root */,
+				BFEF391E2302298F001F9859 /* Store */,
+			);
+			path = kohi;
+			sourceTree = "<group>";
+		};
+		BFE9683D23007B0200865BCA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9683E23007B0200865BCA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFE9684B23007B0200865BCA /* kohiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9684C23007B0200865BCA /* kohiTests.swift */,
+				BFE9684E23007B0200865BCA /* Info.plist */,
+			);
+			path = kohiTests;
+			sourceTree = "<group>";
+		};
+		BFE9685623007B0200865BCA /* kohiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9685723007B0200865BCA /* kohiUITests.swift */,
+				BFE9685923007B0200865BCA /* Info.plist */,
+			);
+			path = kohiUITests;
+			sourceTree = "<group>";
+		};
+		BFEB607A2306E55000BBBDE8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9683523007B0000865BCA /* AppDelegate.swift */,
+				BFE9683923007B0000865BCA /* ContentView.swift */,
+				BFE9683723007B0000865BCA /* SceneDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BFEF391E2302298F001F9859 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */,
+				BFE9686723007D3400865BCA /* TastingSheetStore.swift */,
+				BFEF391C23022312001F9859 /* UserStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE9683123007B0000865BCA /* kohi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE9685C23007B0200865BCA /* Build configuration list for PBXNativeTarget "kohi" */;
+			buildPhases = (
+				D3D499BFC58824B29B0313C5 /* [CP] Check Pods Manifest.lock */,
+				BFE9682E23007B0000865BCA /* Sources */,
+				BFE9682F23007B0000865BCA /* Frameworks */,
+				BFE9683023007B0000865BCA /* Resources */,
+				A66918873DA2B70950C9E9B0 /* [CP] Embed Pods Frameworks */,
+				BF6064DD2306E03800C38A22 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kohi;
+			productName = kohi;
+			productReference = BFE9683223007B0000865BCA /* kohi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFE9684723007B0200865BCA /* kohiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE9685F23007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiTests" */;
+			buildPhases = (
+				7B4839BB8C4AC036B05AEFA9 /* [CP] Check Pods Manifest.lock */,
+				BFE9684423007B0200865BCA /* Sources */,
+				BFE9684523007B0200865BCA /* Frameworks */,
+				BFE9684623007B0200865BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE9684A23007B0200865BCA /* PBXTargetDependency */,
+			);
+			name = kohiTests;
+			productName = kohiTests;
+			productReference = BFE9684823007B0200865BCA /* kohiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFE9685223007B0200865BCA /* kohiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE9686223007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiUITests" */;
+			buildPhases = (
+				6AB55AEE226D98C1B6E741B1 /* [CP] Check Pods Manifest.lock */,
+				BFE9684F23007B0200865BCA /* Sources */,
+				BFE9685023007B0200865BCA /* Frameworks */,
+				BFE9685123007B0200865BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE9685523007B0200865BCA /* PBXTargetDependency */,
+			);
+			name = kohiUITests;
+			productName = kohiUITests;
+			productReference = BFE9685323007B0200865BCA /* kohiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE9682A23007B0000865BCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Thibaut;
+				TargetAttributes = {
+					BFE9683123007B0000865BCA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					BFE9684723007B0200865BCA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BFE9683123007B0000865BCA;
+					};
+					BFE9685223007B0200865BCA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BFE9683123007B0000865BCA;
+					};
+				};
+			};
+			buildConfigurationList = BFE9682D23007B0000865BCA /* Build configuration list for PBXProject "kohi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = BFE9682923007B0000865BCA;
+			productRefGroup = BFE9683323007B0000865BCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE9683123007B0000865BCA /* kohi */,
+				BFE9684723007B0200865BCA /* kohiTests */,
+				BFE9685223007B0200865BCA /* kohiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE9683023007B0000865BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF721742230561D800F0EC50 /* Localizable.strings in Resources */,
+				BFE9684223007B0200865BCA /* LaunchScreen.storyboard in Resources */,
+				BFEF391B230207CA001F9859 /* Assets.xcassets in Resources */,
+				BFE9683F23007B0200865BCA /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9684623007B0200865BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9685123007B0200865BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AB55AEE226D98C1B6E741B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kohiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B4839BB8C4AC036B05AEFA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kohiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66918873DA2B70950C9E9B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kohi/Pods-kohi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kohi/Pods-kohi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kohi/Pods-kohi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF6064DD2306E03800C38A22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		D3D499BFC58824B29B0313C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kohi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE9682E23007B0000865BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */,
+				BF1ABB702303318800026B65 /* User.swift in Sources */,
+				BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */,
+				BFEF39172301E3F3001F9859 /* UserSettingsStore.swift in Sources */,
+				BFE9683823007B0000865BCA /* SceneDelegate.swift in Sources */,
+				BF1ABB742303338600026B65 /* Method.swift in Sources */,
+				BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */,
+				BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */,
+				BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */,
+				BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */,
+				BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */,
+				BFEF39192301FCE7001F9859 /* TastingSheetListView.swift in Sources */,
+				BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */,
+				BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */,
+				BFE9683A23007B0000865BCA /* ContentView.swift in Sources */,
+				BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */,
+				BFEF391D23022312001F9859 /* UserStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9684423007B0200865BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE9684D23007B0200865BCA /* kohiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE9684F23007B0200865BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE9685823007B0200865BCA /* kohiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFE9684A23007B0200865BCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE9683123007B0000865BCA /* kohi */;
+			targetProxy = BFE9684923007B0200865BCA /* PBXContainerItemProxy */;
+		};
+		BFE9685523007B0200865BCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE9683123007B0000865BCA /* kohi */;
+			targetProxy = BFE9685423007B0200865BCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF721744230561D800F0EC50 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF7217452305620500F0EC50 /* en */,
+				BF7217472305626800F0EC50 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BFE9684023007B0200865BCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE9684123007B0200865BCA /* Base */,
+				BF7217462305622900F0EC50 /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFE9685A23007B0200865BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFE9685B23007B0200865BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE9685D23007B0200865BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "kohi/Preview\\ Content";
+				DEVELOPMENT_TEAM = U22E826S97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = kohi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BFE9685E23007B0200865BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "kohi/Preview\\ Content";
+				DEVELOPMENT_TEAM = U22E826S97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = kohi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BFE9686023007B0200865BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = kohiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kohi.app/kohi";
+			};
+			name = Debug;
+		};
+		BFE9686123007B0200865BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = kohiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kohi.app/kohi";
+			};
+			name = Release;
+		};
+		BFE9686323007B0200865BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = kohiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kohi;
+			};
+			name = Debug;
+		};
+		BFE9686423007B0200865BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = kohiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kohi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE9682D23007B0000865BCA /* Build configuration list for PBXProject "kohi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE9685A23007B0200865BCA /* Debug */,
+				BFE9685B23007B0200865BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE9685C23007B0200865BCA /* Build configuration list for PBXNativeTarget "kohi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE9685D23007B0200865BCA /* Debug */,
+				BFE9685E23007B0200865BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE9685F23007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE9686023007B0200865BCA /* Debug */,
+				BFE9686123007B0200865BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE9686223007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE9686323007B0200865BCA /* Debug */,
+				BFE9686423007B0200865BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE9682A23007B0000865BCA /* Project object */;
+}
