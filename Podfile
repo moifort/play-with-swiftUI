@@ -13,7 +13,7 @@ target 'kohi' do
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
-  #pod 'Firebase/Performance'
+  pod 'Firebase/Performance'
   pod 'AwaitKit'
   pod 'PromiseKit'
 

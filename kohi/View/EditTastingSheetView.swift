@@ -34,7 +34,7 @@ struct EditTastingSheetView: View {
                         self.grindSize,
                         self.weight)
             self.presentationMode.value.dismiss()
-        }, label: { Text("Edit") }).disabled($coffee.value.count == 0)
+        }, label: { Text("Save") }).disabled($coffee.value.count == 0)
     }
     
     var cancelButton: some View {
