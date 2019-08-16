@@ -13,6 +13,7 @@
 		BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */; };
 		BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */; };
 		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
+		BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */; };
 		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
 		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
 		BF721742230561D800F0EC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF721744230561D800F0EC50 /* Localizable.strings */; };
@@ -64,6 +65,7 @@
 		BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetForm.swift; sourceTree = "<group>"; };
 		BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingSheetView.swift; sourceTree = "<group>"; };
 		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
 		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
 		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		BFE9683423007B0000865BCA /* kohi */ = {
 			isa = PBXGroup;
 			children = (
+				BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */,
 				BF654D282301C58C00173379 /* kohi.entitlements */,
 				BFE9684323007B0200865BCA /* Info.plist */,
 				BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */,
@@ -361,6 +364,7 @@
 			files = (
 				BF721742230561D800F0EC50 /* Localizable.strings in Resources */,
 				BFE9684223007B0200865BCA /* LaunchScreen.storyboard in Resources */,
+				BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */,
 				BFEF391B230207CA001F9859 /* Assets.xcassets in Resources */,
 				BFE9683F23007B0200865BCA /* Preview Assets.xcassets in Resources */,
 			);
