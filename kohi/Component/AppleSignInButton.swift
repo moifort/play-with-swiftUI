@@ -1,9 +1,6 @@
 import SwiftUI
 import AuthenticationServices
 
-protocol CredentialData {
-    func get(email: String)
-}
 
 struct SignInWithAppleButton: View {    
     var body: some View {
@@ -22,7 +19,10 @@ struct AppleSignInButtonView: UIViewRepresentable {
 #if DEBUG
 struct SignInWithAppleButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignInWithAppleButton().environment(\.locale, Locale(identifier: "fr"))
+        Group {
+            SignInWithAppleButton().environment(\.locale, Locale(identifier: "en"))
+            SignInWithAppleButton().environment(\.locale, Locale(identifier: "fr"))
+        }
     }
 }
 #endif

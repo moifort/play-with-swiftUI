@@ -26,7 +26,7 @@ struct TastingSheetListView: View {
                     TestingSheetRow(tastingSheet: tastingSheet).padding(.all, 5)
                     }
                 }.onDelete { indexSet in
-                    let toDelete = self.$tastingSheetsStore.tastingSheets[indexSet.first!]
+                    let toDelete = self.tastingSheetsStore.tastingSheets[indexSet.first!]
                     self.tastingSheetsStore.delete(id: toDelete.id)
                 }
             }
@@ -38,11 +38,11 @@ struct TastingSheetListView: View {
     }
 }
 
-/*
+
 #if DEBUG
 struct TastingSheetListView_Previews: PreviewProvider {
-    static let tastingsheets = [
-        TastingSheet(id: "id",
+    static let sheets = [
+        TastingSheet(id: "00",
                      method: Method.moka,
                      coffee: "Brazilia",
                      coffeeGrindSize: 18,
@@ -51,8 +51,8 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      waterQuantityInMilliliters: 150,
                      waterTemperatureInCelsius: 75,
                      tasteRatingOutOf5: 5),
-        TastingSheet(id: "id",
-                     method: Method.moka,
+        TastingSheet(id: "01",
+                     method: Method.v60,
                      coffee: "Voluto",
                      coffeeGrindSize: 25,
                      coffeeWeightInGrams: 200,
@@ -60,7 +60,7 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      waterQuantityInMilliliters: 45,
                      waterTemperatureInCelsius: 80,
                      tasteRatingOutOf5: 5),
-        TastingSheet(id: "id",
+        TastingSheet(id: "02",
                      method: Method.aeropress,
                      coffee: "Brazila from testotesra",
                      coffeeGrindSize: 20,
@@ -71,14 +71,17 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      tasteRatingOutOf5: 5)
     ]
     
+    static let store = TastingSheetsStore(userId: "", tastingSheets: sheets)
+    
     static var previews: some View {
         Group {
-            TastingSheetListView(tastingSheets: .constant(tastingsheets)).environment(\.locale, Locale(identifier: "en"))
-            TastingSheetListView(tastingSheets: .constant(tastingsheets)).environment(\.locale, Locale(identifier: "fr"))
-            TastingSheetListView(tastingSheets: .constant(tastingsheets)).environment(\.colorScheme, .dark)
-            TastingSheetListView(tastingSheets: .constant(tastingsheets)).previewDevice("iPhone SE").environment(\.locale, Locale(identifier: "fr"))
-        }
+            TastingSheetListView()
+            TastingSheetListView().environment(\.locale, Locale(identifier: "fr"))
+            TastingSheetListView().environment(\.colorScheme, .dark)
+        }.environmentObject(store)
+            .environmentObject(UserStore())
     }
 }
 #endif
-*/
+
+

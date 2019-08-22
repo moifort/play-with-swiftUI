@@ -33,12 +33,12 @@ struct EditTastingSheetView: View {
                         self.coffee,
                         self.grindSize,
                         self.weight)
-            self.presentationMode.value.dismiss()
-        }, label: { Text("Save") }).disabled($coffee.value.count == 0)
+            self.presentationMode.wrappedValue.dismiss()
+        }, label: { Text("Save") }).disabled(self.coffee.count == 0)
     }
     
     var cancelButton: some View {
-        Button(action: { self.presentationMode.value.dismiss() },
+        Button(action: { self.presentationMode.wrappedValue.dismiss() },
                label: { Text("Cancel") })
     }
 }
@@ -46,7 +46,11 @@ struct EditTastingSheetView: View {
 #if DEBUG
 struct EditTastingSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        EditTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
+        Group {
+            EditTastingSheetView()
+            EditTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
+        }
+        
     }
 }
 #endif

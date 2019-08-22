@@ -5,17 +5,16 @@ import AwaitKit
 import AuthenticationServices
 
 final class UserStore: ObservableObject {
-    let collection: CollectionReference
-    var userSettings: UserSettingsStore
-    var credential = Credential()
+    let collection = Firestore.firestore().collection("users")
+    let credential = Credential()
     
-    init(userSettings: UserSettingsStore) {
-        collection = Firestore.firestore().collection("users")
-        self.userSettings = userSettings
-    }
+    @Published var isLogged = UserDefaults.standard.bool(forKey: "isLogged")
+    @Published var userId = UserDefaults.standard.string(forKey: "userId") ?? ""
+    
     
     func logout() {
-        self.userSettings.isLogged = false
+        UserDefaults.standard.set(false, forKey: "isLogged")
+        self.isLogged = false
     }
     
     func login() {
@@ -48,10 +47,15 @@ final class UserStore: ObservableObject {
             let user = alreadySignUpUser == nil
                 ? try! await(self.signup(appleId: appleId, familyName: familyName, givenName: givenName, email: email))
                 : alreadySignUpUser!
-            DispatchQueue.main.async {
-                self.userSettings.isLogged = true
-                self.userSettings.userId = user.id
+            
+            DispatchQueue.main.sync {
+                UserDefaults.standard.set(true, forKey: "isLogged")
+                UserDefaults.standard.set(user.id, forKey: "userId")
+                self.userId = user.id
+                self.isLogged = true
+                
             }
+            
             return user
         }
     }

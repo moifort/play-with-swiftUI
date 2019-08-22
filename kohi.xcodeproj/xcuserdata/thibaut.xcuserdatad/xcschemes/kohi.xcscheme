@@ -27,6 +27,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BFE9684723007B0200865BCA"
+               BuildableName = "kohiTests.xctest"
+               BlueprintName = "kohiTests"
+               ReferencedContainer = "container:kohi.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BFE9685223007B0200865BCA"
+               BuildableName = "kohiUITests.xctest"
+               BlueprintName = "kohiUITests"
+               ReferencedContainer = "container:kohi.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -56,6 +76,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BFE9683123007B0000865BCA"
+            BuildableName = "kohi.app"
+            BlueprintName = "kohi"
+            ReferencedContainer = "container:kohi.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

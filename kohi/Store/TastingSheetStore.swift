@@ -4,12 +4,13 @@ import Firebase
 
 final class TastingSheetsStore: ObservableObject {
     let userId: String
-    @Published var tastingSheets = [TastingSheet]()
+    @Published var tastingSheets  : [TastingSheet]
     let collection: CollectionReference
     
     
-    init(userId: String) {
+    init(userId: String, tastingSheets : [TastingSheet] = [TastingSheet]()) {
         self.userId = userId
+        self.tastingSheets = tastingSheets
         collection = Firestore.firestore().collection("tastingSheets")
         collection.whereField("userId", isEqualTo: userId).addSnapshotListener { querySnapshot, error in
             guard let snapshot = querySnapshot else {

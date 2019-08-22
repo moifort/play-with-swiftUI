@@ -25,22 +25,26 @@ struct NewTastingSheetView: View {
     }
     
     var cancelButton: some View {
-        Button(action: { self.presentationMode.value.dismiss() },
+        Button(action: { self.presentationMode.wrappedValue.dismiss() },
                label: { Text("Cancel") })
     }
     
     var addButton: some View {
         Button(action: {
             self.add(self.method.rawValue, self.coffee, self.grindSize, self.weight)
-            self.presentationMode.value.dismiss()
-        }, label: { Text("Add") }).disabled($coffee.value.count == 0)
+            self.presentationMode.wrappedValue.dismiss()
+        }, label: { Text("Add") }).disabled(self.coffee.count == 0)
     }
 }
 
 #if DEBUG
 struct NewTastingSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        NewTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
+        Group {
+            NewTastingSheetView()
+            NewTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
+        }
+
     }
 }
 #endif

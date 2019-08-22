@@ -63,7 +63,11 @@ struct TastingSheetView_Previews: PreviewProvider {
                                            tasteRatingOutOf5: 5)
     
     static var previews: some View {
-        TastingSheetView(tastingSheet: tastingSheet).environment(\.locale, Locale(identifier: "fr"))
+        Group {
+             TastingSheetView(tastingSheet: tastingSheet).environment(\.colorScheme, .dark)
+             TastingSheetView(tastingSheet: tastingSheet).environment(\.locale, Locale(identifier: "fr"))
+        }
+       
     }
 }
 #endif

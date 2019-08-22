@@ -18,7 +18,7 @@ struct LoginView: View {
                 Image("kohi")
                     .resizable()
                     .scaledToFit()
-                    .padding(60)
+                    .padding(50)
                 Spacer()
                 SignInWithAppleButton()
                     .padding(.bottom, 15)
@@ -27,6 +27,9 @@ struct LoginView: View {
         }
     }
 }
+
+
+
 
 #if DEBUG
 struct LoginView_Previews: PreviewProvider {

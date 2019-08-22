@@ -16,6 +16,8 @@ struct TastingSheetForm: View {
     @Binding var time: Int?
     @Binding var weight: Int?
     
+    @State var toto = 12
+    
     var body: some View {
         Form {
             Picker("Method", selection: $method) {
@@ -33,7 +35,7 @@ struct TastingSheetForm: View {
                 HStack {
                     Text("Grind size").foregroundColor(.secondary)
                     Spacer()
-                    TextField("", value: $grindSize, formatter: NumberFormatter())
+                    TextField("", value: $grindSize, formatter: NumberFormatter(), onEditingChanged: {vel in print(vel)})
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.trailing)
                 }

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F745DF1D73877C36C7DC5A /* Pods_kohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270FA572FFC072339E2CF29 /* Pods_kohi.framework */; };
+		20D54E14F083F5678BF94BF0 /* Pods_kohiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A5B080A07BDF3959A4E0BA /* Pods_kohiUITests.framework */; };
 		BF1ABB702303318800026B65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB6F2303318800026B65 /* User.swift */; };
 		BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB71230332C600026B65 /* TastingSheet.swift */; };
 		BF1ABB742303338600026B65 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB732303338600026B65 /* Method.swift */; };
@@ -15,6 +17,8 @@
 		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
 		BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */; };
 		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
+		BF546000230761DE00CD9619 /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */; };
+		BF546003230764C100CD9619 /* AwaitKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF546002230764C100CD9619 /* AwaitKit */; };
 		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
 		BF721742230561D800F0EC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF721744230561D800F0EC50 /* Localizable.strings */; };
 		BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683523007B0000865BCA /* AppDelegate.swift */; };
@@ -27,13 +31,10 @@
 		BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686723007D3400865BCA /* TastingSheetStore.swift */; };
 		BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */; };
 		BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */; };
-		BFEF39172301E3F3001F9859 /* UserSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */; };
 		BFEF39192301FCE7001F9859 /* TastingSheetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */; };
 		BFEF391B230207CA001F9859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEF391A230207CA001F9859 /* Assets.xcassets */; };
 		BFEF391D23022312001F9859 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF391C23022312001F9859 /* UserStore.swift */; };
-		DD2493DB9B1CDF2E0AA80C3D /* Pods_kohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */; };
-		F6B39FF246F57CC84360D355 /* Pods_kohiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */; };
-		F8CD7A8D5C837DFBD3F95646 /* Pods_kohiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */; };
+		F5701108FDA917579BA2BC96 /* Pods_kohiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6744FAE5B21CE59AC5916B /* Pods_kohiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.release.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.release.xcconfig"; sourceTree = "<group>"; };
-		5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.release.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.release.xcconfig"; sourceTree = "<group>"; };
-		67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.debug.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.debug.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.debug.xcconfig"; sourceTree = "<group>"; };
+		293293FCA3E6D79466BE7B55 /* Pods-kohiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.debug.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F022A045507302D5C0A6965 /* Pods-kohi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.debug.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.debug.xcconfig"; sourceTree = "<group>"; };
+		7C40B5F784464902601AC745 /* Pods-kohiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.debug.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82A5B080A07BDF3959A4E0BA /* Pods_kohiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BC370BC00285BB33994366 /* Pods-kohiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.release.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA776A5BD7104BDC6E7D2C99 /* Pods-kohiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.release.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE6744FAE5B21CE59AC5916B /* Pods_kohiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36DCFFD19529DB74DFF7CF4 /* Pods-kohi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.release.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.release.xcconfig"; sourceTree = "<group>"; };
 		BF1ABB6F2303318800026B65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BF1ABB71230332C600026B65 /* TastingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheet.swift; sourceTree = "<group>"; };
 		BF1ABB732303338600026B65 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
+		BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
 		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
 		BF7217452305620500F0EC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -86,16 +91,12 @@
 		BFE9685723007B0200865BCA /* kohiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiUITests.swift; sourceTree = "<group>"; };
 		BFE9685923007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE9686723007D3400865BCA /* TastingSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetStore.swift; sourceTree = "<group>"; };
-		BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = TastingSheetRow.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 0; };
-		BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTastingSheetView.swift; sourceTree = "<group>"; };
-		BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsStore.swift; sourceTree = "<group>"; };
+		BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TastingSheetRow.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTastingSheetView.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 0; };
 		BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetListView.swift; sourceTree = "<group>"; };
 		BFEF391A230207CA001F9859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEF391C23022312001F9859 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
-		D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.debug.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiTests.release.xcconfig"; path = "Target Support Files/Pods-kohiTests/Pods-kohiTests.release.xcconfig"; sourceTree = "<group>"; };
+		D270FA572FFC072339E2CF29 /* Pods_kohi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kohi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2493DB9B1CDF2E0AA80C3D /* Pods_kohi.framework in Frameworks */,
+				BF546003230764C100CD9619 /* AwaitKit in Frameworks */,
+				04F745DF1D73877C36C7DC5A /* Pods_kohi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CD7A8D5C837DFBD3F95646 /* Pods_kohiTests.framework in Frameworks */,
+				F5701108FDA917579BA2BC96 /* Pods_kohiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,32 +121,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B39FF246F57CC84360D355 /* Pods_kohiUITests.framework in Frameworks */,
+				20D54E14F083F5678BF94BF0 /* Pods_kohiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03B85FCBCD037309F2090964 /* Pods */ = {
+		3D46170613CD54A22DADCF7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */,
-				52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */,
-				D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */,
-				EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */,
-				67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */,
-				5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		8127D6CC1820FA963DDB0D66 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D7B1104A0AB7EEDA74BA118D /* Pods_kohi.framework */,
-				E8D6D4517C52098A24C66C6C /* Pods_kohiTests.framework */,
-				8D6B62338D30C63C90CED939 /* Pods_kohiUITests.framework */,
+				D270FA572FFC072339E2CF29 /* Pods_kohi.framework */,
+				AE6744FAE5B21CE59AC5916B /* Pods_kohiTests.framework */,
+				82A5B080A07BDF3959A4E0BA /* Pods_kohiUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,7 +163,6 @@
 			children = (
 				BF721744230561D800F0EC50 /* Localizable.strings */,
 				BFEF391A230207CA001F9859 /* Assets.xcassets */,
-				BFE9684023007B0200865BCA /* LaunchScreen.storyboard */,
 			);
 			path = Ressource;
 			sourceTree = "<group>";
@@ -182,6 +170,7 @@
 		BF800A6223074D270069DE62 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFE9683923007B0000865BCA /* ContentView.swift */,
 				BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */,
 				BF3DA8012301902C00F71EAD /* LoginView.swift */,
 				BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */,
@@ -194,12 +183,12 @@
 		BFE9682923007B0000865BCA = {
 			isa = PBXGroup;
 			children = (
-				8127D6CC1820FA963DDB0D66 /* Frameworks */,
 				BFE9683423007B0000865BCA /* kohi */,
 				BFE9684B23007B0200865BCA /* kohiTests */,
 				BFE9685623007B0200865BCA /* kohiUITests */,
-				03B85FCBCD037309F2090964 /* Pods */,
 				BFE9683323007B0000865BCA /* Products */,
+				D931F6D9DAFAEC66A06C3255 /* Pods */,
+				3D46170613CD54A22DADCF7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +241,7 @@
 			children = (
 				BFE9685723007B0200865BCA /* kohiUITests.swift */,
 				BFE9685923007B0200865BCA /* Info.plist */,
+				BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */,
 			);
 			path = kohiUITests;
 			sourceTree = "<group>";
@@ -259,8 +249,8 @@
 		BFEB607A2306E55000BBBDE8 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				BFE9684023007B0200865BCA /* LaunchScreen.storyboard */,
 				BFE9683523007B0000865BCA /* AppDelegate.swift */,
-				BFE9683923007B0000865BCA /* ContentView.swift */,
 				BFE9683723007B0000865BCA /* SceneDelegate.swift */,
 			);
 			path = Root;
@@ -269,11 +259,23 @@
 		BFEF391E2302298F001F9859 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				BFEF39162301E3F3001F9859 /* UserSettingsStore.swift */,
 				BFE9686723007D3400865BCA /* TastingSheetStore.swift */,
 				BFEF391C23022312001F9859 /* UserStore.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		D931F6D9DAFAEC66A06C3255 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F022A045507302D5C0A6965 /* Pods-kohi.debug.xcconfig */,
+				B36DCFFD19529DB74DFF7CF4 /* Pods-kohi.release.xcconfig */,
+				7C40B5F784464902601AC745 /* Pods-kohiTests.debug.xcconfig */,
+				A2BC370BC00285BB33994366 /* Pods-kohiTests.release.xcconfig */,
+				293293FCA3E6D79466BE7B55 /* Pods-kohiUITests.debug.xcconfig */,
+				AA776A5BD7104BDC6E7D2C99 /* Pods-kohiUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +297,9 @@
 			dependencies = (
 			);
 			name = kohi;
+			packageProductDependencies = (
+				BF546002230764C100CD9619 /* AwaitKit */,
+			);
 			productName = kohi;
 			productReference = BFE9683223007B0000865BCA /* kohi.app */;
 			productType = "com.apple.product-type.application";
@@ -370,6 +375,9 @@
 				fr,
 			);
 			mainGroup = BFE9682923007B0000865BCA;
+			packageReferences = (
+				BF546001230764C100CD9619 /* XCRemoteSwiftPackageReference "AwaitKit" */,
+			);
 			productRefGroup = BFE9683323007B0000865BCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -405,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF546000230761DE00CD9619 /* TestPlan.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +530,6 @@
 				BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */,
 				BF1ABB702303318800026B65 /* User.swift in Sources */,
 				BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */,
-				BFEF39172301E3F3001F9859 /* UserSettingsStore.swift in Sources */,
 				BFE9683823007B0000865BCA /* SceneDelegate.swift in Sources */,
 				BF1ABB742303338600026B65 /* Method.swift in Sources */,
 				BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */,
@@ -709,7 +717,7 @@
 		};
 		BFE9685D23007B0200865BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BBF5F46AAFC6288B22F2371 /* Pods-kohi.debug.xcconfig */;
+			baseConfigurationReference = 3F022A045507302D5C0A6965 /* Pods-kohi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
@@ -733,7 +741,7 @@
 		};
 		BFE9685E23007B0200865BCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52A74CF0422D951829D69EA9 /* Pods-kohi.release.xcconfig */;
+			baseConfigurationReference = B36DCFFD19529DB74DFF7CF4 /* Pods-kohi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
@@ -757,11 +765,12 @@
 		};
 		BFE9686023007B0200865BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D67F27AE8ED025487FAF9E5D /* Pods-kohiTests.debug.xcconfig */;
+			baseConfigurationReference = 7C40B5F784464902601AC745 /* Pods-kohiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U22E826S97;
 				INFOPLIST_FILE = kohiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,11 +787,12 @@
 		};
 		BFE9686123007B0200865BCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE97B1E767BE134EF49593F6 /* Pods-kohiTests.release.xcconfig */;
+			baseConfigurationReference = A2BC370BC00285BB33994366 /* Pods-kohiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U22E826S97;
 				INFOPLIST_FILE = kohiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -799,10 +809,11 @@
 		};
 		BFE9686323007B0200865BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67F610BB47F47450AD52982A /* Pods-kohiUITests.debug.xcconfig */;
+			baseConfigurationReference = 293293FCA3E6D79466BE7B55 /* Pods-kohiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U22E826S97;
 				INFOPLIST_FILE = kohiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -819,10 +830,11 @@
 		};
 		BFE9686423007B0200865BCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2061263DB1662DB150B694 /* Pods-kohiUITests.release.xcconfig */;
+			baseConfigurationReference = AA776A5BD7104BDC6E7D2C99 /* Pods-kohiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U22E826S97;
 				INFOPLIST_FILE = kohiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -877,6 +889,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF546001230764C100CD9619 /* XCRemoteSwiftPackageReference "AwaitKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/AwaitKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF546002230764C100CD9619 /* AwaitKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF546001230764C100CD9619 /* XCRemoteSwiftPackageReference "AwaitKit" */;
+			productName = AwaitKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFE9682A23007B0000865BCA /* Project object */;
 }
