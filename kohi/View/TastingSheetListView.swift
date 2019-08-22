@@ -1,4 +1,5 @@
 import SwiftUI
+import Firebase
 
 struct TastingSheetListView: View {
     @EnvironmentObject private var userStore: UserStore
@@ -33,7 +34,8 @@ struct TastingSheetListView: View {
             .navigationBarTitle(Text("Tasting sheets"))
             .navigationBarItems(leading: logoutButton, trailing: addButton)
             .sheet(isPresented: $showingNewTastingSheet) { NewTastingSheetView(add: self.tastingSheetsStore.add) }
-            
+        }.onAppear() {
+            self.tastingSheetsStore.fetchAndListen()
         }
     }
 }

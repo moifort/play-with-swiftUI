@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct ContentView: View {
     @EnvironmentObject private var userStore: UserStore
     

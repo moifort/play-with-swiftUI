@@ -11,6 +11,12 @@ final class UserStore: ObservableObject {
     @Published var isLogged = UserDefaults.standard.bool(forKey: "isLogged")
     @Published var userId = UserDefaults.standard.string(forKey: "userId") ?? ""
     
+    init() {
+        if (!userId.isEmpty) {
+            Analytics.setUserID(userId)
+        }
+    }
+    
     
     func logout() {
         UserDefaults.standard.set(false, forKey: "isLogged")
@@ -48,12 +54,14 @@ final class UserStore: ObservableObject {
                 ? try! await(self.signup(appleId: appleId, familyName: familyName, givenName: givenName, email: email))
                 : alreadySignUpUser!
             
+            UserDefaults.standard.set(true, forKey: "isLogged")
+            UserDefaults.standard.set(user.id, forKey: "userId")
+            Analytics.setUserID(user.id)
+            Analytics.logEvent(AnalyticsEventLogin, parameters: [AnalyticsParameterMethod: "Sign In with Apple"])
+            
             DispatchQueue.main.sync {
-                UserDefaults.standard.set(true, forKey: "isLogged")
-                UserDefaults.standard.set(user.id, forKey: "userId")
                 self.userId = user.id
                 self.isLogged = true
-                
             }
             
             return user
@@ -84,6 +92,7 @@ final class UserStore: ObservableObject {
                 if let err = err {
                     seal.reject(err)
                 } else {
+                    Analytics.logEvent(AnalyticsEventSignUp, parameters: [AnalyticsParameterMethod: "Sign In with Apple"])
                     seal.fulfill(User(id: ref!.documentID, appleId: appleId,  givenName: givenName,familyName: familyName, email: email))
                 }
             }

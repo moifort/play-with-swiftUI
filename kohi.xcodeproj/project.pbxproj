@@ -82,7 +82,7 @@
 		BFE9683223007B0000865BCA /* kohi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kohi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9683523007B0000865BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9683723007B0000865BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFE9683923007B0000865BCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE9683923007B0000865BCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		BFE9683E23007B0200865BCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFE9684123007B0200865BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE9684323007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		BFE9685323007B0200865BCA /* kohiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9685723007B0200865BCA /* kohiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiUITests.swift; sourceTree = "<group>"; };
 		BFE9685923007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFE9686723007D3400865BCA /* TastingSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetStore.swift; sourceTree = "<group>"; };
+		BFE9686723007D3400865BCA /* TastingSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetStore.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TastingSheetRow.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTastingSheetView.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 0; };
 		BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetListView.swift; sourceTree = "<group>"; };
@@ -726,7 +726,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "kohi/Preview\\ Content";
 				DEVELOPMENT_TEAM = U22E826S97;
 				ENABLE_PREVIEWS = YES;
@@ -750,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kohi/kohi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "kohi/Preview\\ Content";
 				DEVELOPMENT_TEAM = U22E826S97;
 				ENABLE_PREVIEWS = YES;
