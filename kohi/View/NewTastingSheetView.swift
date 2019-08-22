@@ -19,7 +19,7 @@ struct NewTastingSheetView: View {
                              coffee: $coffee,
                              time: $time,
                              weight: $weight)
-                .navigationBarTitle(Text("New tasting sheet"), displayMode: .inline)
+                .navigationBarTitle(Text("New sheet"), displayMode: .inline)
                 .navigationBarItems(leading: cancelButton, trailing: addButton)
         }
     }

@@ -78,6 +78,7 @@ struct TastingSheetListView_Previews: PreviewProvider {
             TastingSheetListView()
             TastingSheetListView().environment(\.locale, Locale(identifier: "fr"))
             TastingSheetListView().environment(\.colorScheme, .dark)
+            TastingSheetListView().previewDevice("iPhone SE")
         }.environmentObject(store)
             .environmentObject(UserStore())
     }

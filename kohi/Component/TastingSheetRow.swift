@@ -1,18 +1,11 @@
 import SwiftUI
 
 struct TestingSheetRow : View {
-    @Environment(\.colorScheme) var dark :ColorScheme
     var tastingSheet: TastingSheet
     
     var body: some View {
         HStack(alignment: .top) {
-            Image(tastingSheet.method.rawValue)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 6)
-                .padding(.trailing, 10)
-                .contrast(dark == ColorScheme.dark ? -1 : 1)
-            
+            MethodImage(image: tastingSheet.method.rawValue)
             VStack(alignment: .leading, spacing: 4) {
                 HStack{
                     Text(tastingSheet.coffee).font(.headline)

@@ -17,6 +17,7 @@
 		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
 		BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */; };
 		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
+		BF44CC4B230EB9F8003CC509 /* MethodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44CC4A230EB9F8003CC509 /* MethodImage.swift */; };
 		BF546000230761DE00CD9619 /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */; };
 		BF546003230764C100CD9619 /* AwaitKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF546002230764C100CD9619 /* AwaitKit */; };
 		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
@@ -71,6 +72,7 @@
 		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
+		BF44CC4A230EB9F8003CC509 /* MethodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodImage.swift; sourceTree = "<group>"; };
 		BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
 		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */,
 				BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */,
 				BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */,
+				BF44CC4A230EB9F8003CC509 /* MethodImage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */,
 				BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */,
 				BFE9683A23007B0000865BCA /* ContentView.swift in Sources */,
+				BF44CC4B230EB9F8003CC509 /* MethodImage.swift in Sources */,
 				BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */,
 				BFEF391D23022312001F9859 /* UserStore.swift in Sources */,
 			);

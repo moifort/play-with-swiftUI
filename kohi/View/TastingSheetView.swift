@@ -9,11 +9,10 @@ struct TastingSheetView: View {
         Form {
             Section(header: Text("METHOD")) {
                 HStack(alignment: .top) {
-                    Image(tastingSheet.method.rawValue)
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                        .shadow(radius: 6)
-                    VStack(alignment: .leading) {Text(tastingSheet.method.rawValue.capitalizingFirstLetter()) }.padding(.leading)
+                    MethodImage(image: tastingSheet.method.rawValue)
+                    VStack(alignment: .leading) {
+                        Text(tastingSheet.method.rawValue.capitalizingFirstLetter()).font(.headline)
+                    }.padding(.leading)
                 }.padding(.all)
             }
             
