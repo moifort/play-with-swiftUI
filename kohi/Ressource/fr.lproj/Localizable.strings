@@ -15,6 +15,7 @@
 "Method" = "Méthode";
 "Name" = "Nom";
 "Grind size" = "Taille de la mouture";
+"Grind" = "Mouture";
 "Weight" = "Poids";
 "Cancel" = "Annuler";
 "Edit" = "Modifier";
@@ -22,3 +23,4 @@
 "METHOD" = "MÉTHODE";
 "grams" = "grammes";
 "Save" = "Sauvegarder";
+"Weight (Gram)" = "Poids (Gramme)";

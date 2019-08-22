@@ -3,12 +3,11 @@ import SwiftUI
 struct NewTastingSheetView: View {
     @Environment(\.presentationMode) var presentationMode
     var add : (String, String, Int?, Int?) -> Void = {_, _, _, _ in }
-    
     @State var id : String = ""
     @State var method : Method = Method.moka
-    @State var grindSize : Int? = nil
+    @State var grindSize : Int = 20
     @State var coffee : String = ""
-    @State var weight : Int? = nil
+    @State var weight : Int = 40
     @State var time : Int? = nil
     
     var body: some View {

@@ -7,8 +7,8 @@ struct EditTastingSheetView: View {
     @State var id : String = ""
     @State var method : Method = Method.moka
     @State var coffee : String = ""
-    @State var grindSize : Int? = nil
-    @State var weight : Int? = nil
+    @State var grindSize : Int = 0
+    @State var weight : Int = 0
     @State var time : Int? = nil
     
     
@@ -31,8 +31,8 @@ struct EditTastingSheetView: View {
             self.update(self.id,
                         self.method.rawValue,
                         self.coffee,
-                        self.grindSize,
-                        self.weight)
+                        self.grindSize == 0 ? nil : self.grindSize,
+                        self.weight == 0 ? nil : self.weight)
             self.presentationMode.wrappedValue.dismiss()
         }, label: { Text("Save") }).disabled(self.coffee.count == 0)
     }

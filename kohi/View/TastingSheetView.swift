@@ -38,7 +38,12 @@ struct TastingSheetView: View {
         }.navigationBarTitle(Text("Detail"), displayMode: .inline)
             .navigationBarItems(trailing: editButton)
             .sheet(isPresented: $showingNewTastingSheet) {
-                EditTastingSheetView(update: self.update, id: self.tastingSheet.id, method: self.tastingSheet.method, coffee: self.tastingSheet.coffee, grindSize: self.tastingSheet.coffeeGrindSize, weight: self.tastingSheet.coffeeWeightInGrams)
+                EditTastingSheetView(update: self.update,
+                                     id: self.tastingSheet.id,
+                                     method: self.tastingSheet.method,
+                                     coffee: self.tastingSheet.coffee,
+                                     grindSize: self.tastingSheet.coffeeGrindSize == nil ? 0 : self.tastingSheet.coffeeGrindSize!,
+                                     weight: self.tastingSheet.coffeeWeightInGrams == nil ? 0 : self.tastingSheet.coffeeWeightInGrams!)
             }
     }
     
