@@ -8,11 +8,15 @@ final class PreferenceStore: ObservableObject {
     let collection = Firestore.firestore().collection("preferences")
     
     
-    func fetch(userId : String) {
+    func fetchAndListen(userId: String) {
         self.userId = userId
-        collection.document(userId).getDocument { (document, error) in
-            if let document = document, document.exists {
-                let data = document.data()!
+        self.collection.document(userId).addSnapshotListener { querySnapshot, error in
+            guard let snapshot = querySnapshot else {
+                Crashlytics.sharedInstance().recordError("Error fetching snapshots: \(error!)")
+                return
+            }
+            if (snapshot.exists) {
+                let data = snapshot.data()!
                 let grindMeasureId = data["grindMeasure"] as? String
                 self.preference.grindMeasure = (grindMeasureId != nil) ? GrindMeasure.fromId(measureId: grindMeasureId!) : GrindMeasure.default
             } else {

@@ -19,7 +19,7 @@ struct TastingSheetListView: View {
     
     var preferencesButton: some View {
         Button(action: { self.showingPreferences.toggle() }) {
-            Image(systemName: "person.circle").imageScale(.large).padding(.trailing, 30)
+            Image(systemName: "person.circle").imageScale(.large).padding(15)
         }.sheet(isPresented: $showingPreferences) {
             PreferencesView(logout: self.userStore.logout,
                             update: self.preferenceStore.update,
@@ -33,7 +33,7 @@ struct TastingSheetListView: View {
             List {
                 ForEach(tastingSheetsStore.tastingSheets) { tastingSheet in
                     NavigationLink(destination: TastingSheetView(tastingSheet: tastingSheet, update: self.tastingSheetsStore.update)) {
-                        TestingSheetRow(tastingSheet: tastingSheet).padding(.all, 5)
+                        TestingSheetRow(grindMeasure: self.preferenceStore.preference.grindMeasure, tastingSheet: tastingSheet).padding(.all, 5)
                     }
                 }.onDelete { indexSet in
                     let toDelete = self.tastingSheetsStore.tastingSheets[indexSet.first!]
@@ -44,7 +44,7 @@ struct TastingSheetListView: View {
             .navigationBarItems(leading: preferencesButton, trailing: addButton)
         }.onAppear() {
             self.tastingSheetsStore.fetchAndListen(userId: self.userStore.userId)
-            self.preferenceStore.fetch(userId: self.userStore.userId)
+            self.preferenceStore.fetchAndListen(userId: self.userStore.userId)
         }
     }
 }

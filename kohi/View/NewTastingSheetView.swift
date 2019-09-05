@@ -1,10 +1,12 @@
 import SwiftUI
 
 struct NewTastingSheetView: View {
+    @EnvironmentObject private var preferenceStore: PreferenceStore
     @Environment(\.presentationMode) var presentationMode
+    
     var add : (String, String, Int?, Int?) -> Void = {_, _, _, _ in }
     @State var id : String = ""
-    @State var methodId = CoffeeMethod.default.id
+    @State var coffeeMethod = CoffeeMethod.default
     @State var grindSize = 20
     @State var coffee = ""
     @State var weight = 40
@@ -12,12 +14,12 @@ struct NewTastingSheetView: View {
     
     var body: some View {
         NavigationView {
-            TastingSheetForm(id: $id,
-                             methodId: $methodId,
-                             grindSize: $grindSize,
-                             coffee: $coffee,
-                             time: $time,
-                             weight: $weight)
+            TastingSheetFormWrite(grindMeasure: preferenceStore.preference.grindMeasure,
+                                  id: $id,
+                                  coffeeMethod: $coffeeMethod,
+                                  grindSize: $grindSize,
+                                  coffee: $coffee,
+                                  weight: $weight)
                 .navigationBarTitle(Text("New sheet"), displayMode: .inline)
                 .navigationBarItems(leading: cancelButton, trailing: addButton)
         }
@@ -30,7 +32,7 @@ struct NewTastingSheetView: View {
     
     var addButton: some View {
         Button(action: {
-            self.add(self.methodId, self.coffee, self.grindSize, self.weight)
+            self.add(self.coffeeMethod.id, self.coffee, self.grindSize, self.weight)
             self.presentationMode.wrappedValue.dismiss()
         }, label: { Text("Add") }).disabled(self.coffee.count == 0)
     }

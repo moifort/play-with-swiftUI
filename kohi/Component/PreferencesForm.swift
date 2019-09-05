@@ -7,28 +7,24 @@ struct PreferencesForm: View {
     
     var body: some View {
         Form {
-            
             Section(header: Text("GRIND MEASURE"),
                     footer: Text("Select metrics to have a 0 to 100 grind size or texture like coarse salt, caster sugar, etc.")) {
                 List {
                     Group {
                         ForEach(GrindMeasure.allCases) { measure in
                             HStack {
-                                Text(measure.label.capitalized).tag(measure.id)
+                                Text(measure.label.capitalized)
                                 Spacer()
-                                Text("select")
+                                if (measure.id == self.grindMeasureId) {
+                                    Image(systemName: "checkmark").foregroundColor(.blue)
+                                }
+                            }.onTapGesture {
+                                self.grindMeasureId = measure.id
                             }
                         }
                     }
                 }
             }
-            /* Section(footer: Text("Select metrics to have a 0 to 100 grind size or texture like coarse salt, caster sugar, etc.")) {
-             Picker("Grind measure", selection: $grindMeasureId) {
-             ForEach(GrindMeasure.allCases) { measure in
-             Text(measure.label).tag(measure.id)
-             }
-             }
-             }*/
             
             Button(action: { self.logout() }, label: {
                 HStack(alignment: .center){
@@ -44,8 +40,8 @@ struct PreferencesForm: View {
 struct PreferencesForm_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PreferencesForm(grindMeasureId: .constant("metrics"))
-            PreferencesForm(grindMeasureId: .constant("metrics")).environment(\.colorScheme, .dark)
+            PreferencesForm(grindMeasureId: .constant("metric"))
+            PreferencesForm(grindMeasureId: .constant("metric")).environment(\.colorScheme, .dark)
         }
     }
 }

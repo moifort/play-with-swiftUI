@@ -24,3 +24,10 @@
 "grams" = "grammes";
 "Save" = "Sauvegarder";
 "Weight (Gram)" = "Poids (Gramme)";
+"GRIND MEASURE" = "MESURE DE LA MOUTURE";
+"metric" = "métrique";
+"Select metrics to have a 0 to 100 grind size or texture like coarse salt, caster sugar, etc." = "Selectionnez Métrique pour avoir une mesure de 0 à 100 ou Texture pour avoir une mesure basée sur le touché comme gros sel, sel fin, etc.";
+"flour" = "farine";
+"fine salt" = "sel fin";
+"powdered sugar" = "sucre en poudre";
+"coarse salt" = "gros sel";

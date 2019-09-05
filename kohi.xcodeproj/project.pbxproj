@@ -20,13 +20,14 @@
 		BF281FD3231FF5D1009F9B63 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD2231FF5D1009F9B63 /* Preference.swift */; };
 		BF281FD72320179D009F9B63 /* GrindSizeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD62320179D009F9B63 /* GrindSizeField.swift */; };
 		BF281FD92320188D009F9B63 /* GrindTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD82320188D009F9B63 /* GrindTexture.swift */; };
-		BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */; };
+		BF3D2E8E2303648900ED9E62 /* TastingSheetFormRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8D2303648900ED9E62 /* TastingSheetFormRead.swift */; };
 		BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */; };
 		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
 		BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */; };
 		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
 		BF44CC4B230EB9F8003CC509 /* MethodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44CC4A230EB9F8003CC509 /* MethodImage.swift */; };
 		BF546003230764C100CD9619 /* AwaitKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF546002230764C100CD9619 /* AwaitKit */; };
+		BF59B8BA2321990F0043CF3E /* TastingSheetFormWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59B8B92321990F0043CF3E /* TastingSheetFormWrite.swift */; };
 		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
 		BF721742230561D800F0EC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF721744230561D800F0EC50 /* Localizable.strings */; };
 		BFAACEB82321350D00E0CBA0 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAACEB72321350D00E0CBA0 /* StringUtil.swift */; };
@@ -98,12 +99,13 @@
 		BF281FD2231FF5D1009F9B63 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		BF281FD62320179D009F9B63 /* GrindSizeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindSizeField.swift; sourceTree = "<group>"; };
 		BF281FD82320188D009F9B63 /* GrindTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindTexture.swift; sourceTree = "<group>"; };
-		BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetForm.swift; sourceTree = "<group>"; };
+		BF3D2E8D2303648900ED9E62 /* TastingSheetFormRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetFormRead.swift; sourceTree = "<group>"; };
 		BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingSheetView.swift; sourceTree = "<group>"; };
 		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
 		BF44CC4A230EB9F8003CC509 /* MethodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodImage.swift; sourceTree = "<group>"; };
+		BF59B8B92321990F0043CF3E /* TastingSheetFormWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetFormWrite.swift; sourceTree = "<group>"; };
 		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
 		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
 		BF7217452305620500F0EC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -193,11 +195,12 @@
 			isa = PBXGroup;
 			children = (
 				BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */,
-				BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */,
-				BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */,
+				BF281FD62320179D009F9B63 /* GrindSizeField.swift */,
 				BF44CC4A230EB9F8003CC509 /* MethodImage.swift */,
 				BF281FAB231EFCF7009F9B63 /* PreferencesForm.swift */,
-				BF281FD62320179D009F9B63 /* GrindSizeField.swift */,
+				BF3D2E8D2303648900ED9E62 /* TastingSheetFormRead.swift */,
+				BF59B8B92321990F0043CF3E /* TastingSheetFormWrite.swift */,
+				BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -236,12 +239,12 @@
 		BFE9682923007B0000865BCA = {
 			isa = PBXGroup;
 			children = (
+				3D46170613CD54A22DADCF7F /* Frameworks */,
 				BFE9683423007B0000865BCA /* kohi */,
 				BFE9684B23007B0200865BCA /* kohiTests */,
 				BF281FC7231FF042009F9B63 /* kohiUITests */,
-				BFE9683323007B0000865BCA /* Products */,
 				D931F6D9DAFAEC66A06C3255 /* Pods */,
-				3D46170613CD54A22DADCF7F /* Frameworks */,
+				BFE9683323007B0000865BCA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -569,9 +572,10 @@
 				BF281FD1231FF225009F9B63 /* PreferenceStore.swift in Sources */,
 				BF281FD92320188D009F9B63 /* GrindTexture.swift in Sources */,
 				BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */,
+				BF59B8BA2321990F0043CF3E /* TastingSheetFormWrite.swift in Sources */,
 				BF281FAE231F01EA009F9B63 /* GrindMeasure.swift in Sources */,
 				BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */,
-				BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */,
+				BF3D2E8E2303648900ED9E62 /* TastingSheetFormRead.swift in Sources */,
 				BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */,
 				BFEF39192301FCE7001F9859 /* TastingSheetListView.swift in Sources */,
 				BFAACEB82321350D00E0CBA0 /* StringUtil.swift in Sources */,

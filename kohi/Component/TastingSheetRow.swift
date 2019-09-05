@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct TestingSheetRow : View {
-    var tastingSheet: TastingSheet
+    let grindMeasure : GrindMeasure
+    let tastingSheet: TastingSheet
     
     var body: some View {
         HStack(alignment: .top) {
@@ -15,7 +16,11 @@ struct TestingSheetRow : View {
                         if (tastingSheet.coffeeGrindSize != nil) {
                             HStack {
                                 Image(systemName: "circle.grid.hex.fill")
-                                Text("\(tastingSheet.coffeeGrindSize!)")
+                                if (grindMeasure == .metric) {
+                                    Text("\(tastingSheet.coffeeGrindSize!)")
+                                } else {
+                                    Text(GrindTexture.fromSize(size: tastingSheet.coffeeGrindSize!).label.capitalized)
+                                }
                                 Spacer()
                             }
                         }
@@ -39,7 +44,8 @@ struct TestingSheetRow_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            TestingSheetRow(tastingSheet: TastingSheet(id: "id",
+            TestingSheetRow(grindMeasure: .texture, tastingSheet: TastingSheet(
+                                                       id: "id",
                                                        method: CoffeeMethod.chemex,
                                                        coffee: "OUaaaa qsdjkl qslkj qdslkj qsdlkj qsldkj qslkjd qlskjd qskj qsdklj",
                                                        coffeeGrindSize: nil,
@@ -49,7 +55,8 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        waterTemperatureInCelsius: nil,
                                                        tasteRatingOutOf5: nil)).previewLayout(.sizeThatFits)
             
-            TestingSheetRow(tastingSheet: TastingSheet(id: "id",
+            TestingSheetRow(grindMeasure: .texture,tastingSheet: TastingSheet(
+                                                       id: "id",
                                                        method: CoffeeMethod.moka,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: nil,
@@ -59,7 +66,8 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        waterTemperatureInCelsius: nil,
                                                        tasteRatingOutOf5: nil)).previewLayout(.sizeThatFits)
             
-            TestingSheetRow(tastingSheet: TastingSheet(id: "id",
+            TestingSheetRow(grindMeasure: .texture, tastingSheet: TastingSheet(
+                                                       id: "id",
                                                        method: CoffeeMethod.aeropress,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: 20,
@@ -69,7 +77,8 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        waterTemperatureInCelsius: 75,
                                                        tasteRatingOutOf5: 5)).previewLayout(.sizeThatFits)
             
-            TestingSheetRow(tastingSheet: TastingSheet(id: "id",
+            TestingSheetRow(grindMeasure: .metric,tastingSheet: TastingSheet(
+                                                       id: "id",
                                                        method: CoffeeMethod.v60,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: 20,

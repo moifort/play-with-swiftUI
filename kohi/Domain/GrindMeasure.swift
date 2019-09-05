@@ -12,8 +12,8 @@ enum GrindMeasure : CaseIterable, Identifiable {
     
     var label: String {
         switch self {
-        case .metric: return "metric"
-        case .texture: return "texture"
+        case .metric: return "metric".localized()
+        case .texture: return "texture".localized()
         }
     }
     

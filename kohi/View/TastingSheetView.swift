@@ -1,58 +1,37 @@
 import SwiftUI
 
 struct TastingSheetView: View {
+    @EnvironmentObject private var preferenceStore: PreferenceStore
+    
     var tastingSheet: TastingSheet
     var update : (String, String, String, Int?, Int?) -> () = {_, _,_,_,_ in}
     @State var showingNewTastingSheet = false
     
     var body: some View {
-        Form {
-            Section(header: Text("METHOD")) {
-                HStack(alignment: .top) {
-                    MethodImage(image: tastingSheet.method.image)
-                    VStack(alignment: .leading) {
-                        Text(tastingSheet.method.label.capitalized).font(.headline)
-                    }.padding(.leading)
-                }.padding(.all)
-            }
-            
-          /*  Section(header: Text("COFFEE")) {
-                VStack(alignment: .leading) {
-                    Text("Name").foregroundColor(.secondary).font(.subheadline)
-                    Text(tastingSheet.coffee)
-                }
-                
-                if (tastingSheet.coffeeGrindSize != nil) {
-                    VStack(alignment: .leading) {
-                        Text("Grind size").foregroundColor(.secondary).font(.subheadline)
-                        Text("\(tastingSheet.coffeeGrindSize!)")
-                    }
-                }
-                if (tastingSheet.coffeeWeightInGrams != nil) {
-                    VStack(alignment: .leading) {
-                        Text("Weight").foregroundColor(.secondary).font(.subheadline)
-                        Text("\(tastingSheet.coffeeWeightInGrams!) ") + Text("grams")
-                    }
-                }
-            }*/
-        }.navigationBarTitle(Text("Detail"), displayMode: .inline)
+        TastingSheetFormRead(grindMeasure: preferenceStore.preference.grindMeasure,
+                             id: tastingSheet.id,
+                             coffeeMethod: tastingSheet.method,
+                             grindSize: tastingSheet.coffeeGrindSize,
+                             coffee: tastingSheet.coffee,
+                             weight: tastingSheet.coffeeWeightInGrams)
+            .navigationBarTitle(Text("Detail"), displayMode: .inline)
             .navigationBarItems(trailing: editButton)
             .sheet(isPresented: $showingNewTastingSheet) {
                 EditTastingSheetView(update: self.update,
                                      isTextureDisplay: true,
                                      id: self.tastingSheet.id,
-                                     methodId: self.tastingSheet.method.id,
+                                     coffeeMethod: self.tastingSheet.method,
                                      coffee: self.tastingSheet.coffee,
                                      grindSize: self.tastingSheet.coffeeGrindSize == nil ? 0 : self.tastingSheet.coffeeGrindSize!,
-                                     weight: self.tastingSheet.coffeeWeightInGrams == nil ? 0 : self.tastingSheet.coffeeWeightInGrams!)
-            }
+                                     weight: self.tastingSheet.coffeeWeightInGrams == nil ? 0 : self.tastingSheet.coffeeWeightInGrams!).environmentObject(self.preferenceStore)
+        }
     }
     
     var editButton: some View {
-           Button(action: { self.showingNewTastingSheet.toggle() })  {
-               Text("Edit")
-           }
-       }
+        Button(action: { self.showingNewTastingSheet.toggle() })  {
+            Text("Edit")
+        }
+    }
 }
 
 
@@ -69,9 +48,9 @@ struct TastingSheetView_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-             TastingSheetView(tastingSheet: tastingSheet).environment(\.colorScheme, .dark)
-             TastingSheetView(tastingSheet: tastingSheet).environment(\.locale, Locale(identifier: "fr"))
+            TastingSheetView(tastingSheet: tastingSheet).environment(\.colorScheme, .dark)
+            TastingSheetView(tastingSheet: tastingSheet).environment(\.locale, Locale(identifier: "fr"))
         }
-       
+        
     }
 }
