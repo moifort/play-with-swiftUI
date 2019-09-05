@@ -7,28 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F745DF1D73877C36C7DC5A /* Pods_kohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270FA572FFC072339E2CF29 /* Pods_kohi.framework */; };
-		20D54E14F083F5678BF94BF0 /* Pods_kohiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A5B080A07BDF3959A4E0BA /* Pods_kohiUITests.framework */; };
 		BF1ABB702303318800026B65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB6F2303318800026B65 /* User.swift */; };
 		BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB71230332C600026B65 /* TastingSheet.swift */; };
-		BF1ABB742303338600026B65 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB732303338600026B65 /* Method.swift */; };
+		BF1ABB742303338600026B65 /* CoffeeMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ABB732303338600026B65 /* CoffeeMethod.swift */; };
+		BF281FAC231EFCF7009F9B63 /* PreferencesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FAB231EFCF7009F9B63 /* PreferencesForm.swift */; };
+		BF281FAE231F01EA009F9B63 /* GrindMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FAD231F01EA009F9B63 /* GrindMeasure.swift */; };
+		BF281FB0231F0530009F9B63 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FAF231F0530009F9B63 /* PreferencesView.swift */; };
+		BF281FB1231FE741009F9B63 /* Pods_kohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270FA572FFC072339E2CF29 /* Pods_kohi.framework */; };
+		BF281FB2231FE741009F9B63 /* Pods_kohi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D270FA572FFC072339E2CF29 /* Pods_kohi.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF281FC9231FF042009F9B63 /* kohiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FC8231FF042009F9B63 /* kohiUITests.swift */; };
+		BF281FD1231FF225009F9B63 /* PreferenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD0231FF225009F9B63 /* PreferenceStore.swift */; };
+		BF281FD3231FF5D1009F9B63 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD2231FF5D1009F9B63 /* Preference.swift */; };
+		BF281FD72320179D009F9B63 /* GrindSizeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD62320179D009F9B63 /* GrindSizeField.swift */; };
+		BF281FD92320188D009F9B63 /* GrindTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF281FD82320188D009F9B63 /* GrindTexture.swift */; };
 		BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */; };
 		BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */; };
 		BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DA8012301902C00F71EAD /* LoginView.swift */; };
 		BF3E80E02306FEAC005CEBB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */; };
 		BF4142892300BFEF00835453 /* TastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4142882300BFEF00835453 /* TastingSheetView.swift */; };
 		BF44CC4B230EB9F8003CC509 /* MethodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44CC4A230EB9F8003CC509 /* MethodImage.swift */; };
-		BF546000230761DE00CD9619 /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */; };
 		BF546003230764C100CD9619 /* AwaitKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF546002230764C100CD9619 /* AwaitKit */; };
 		BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */; };
 		BF721742230561D800F0EC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF721744230561D800F0EC50 /* Localizable.strings */; };
+		BFAACEB82321350D00E0CBA0 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAACEB72321350D00E0CBA0 /* StringUtil.swift */; };
 		BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683523007B0000865BCA /* AppDelegate.swift */; };
 		BFE9683823007B0000865BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683723007B0000865BCA /* SceneDelegate.swift */; };
 		BFE9683A23007B0000865BCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9683923007B0000865BCA /* ContentView.swift */; };
 		BFE9683F23007B0200865BCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE9683E23007B0200865BCA /* Preview Assets.xcassets */; };
 		BFE9684223007B0200865BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9684023007B0200865BCA /* LaunchScreen.storyboard */; };
 		BFE9684D23007B0200865BCA /* kohiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9684C23007B0200865BCA /* kohiTests.swift */; };
-		BFE9685823007B0200865BCA /* kohiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9685723007B0200865BCA /* kohiUITests.swift */; };
 		BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686723007D3400865BCA /* TastingSheetStore.swift */; };
 		BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */; };
 		BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF281FCB231FF042009F9B63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE9682A23007B0000865BCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE9683123007B0000865BCA;
+			remoteInfo = kohi;
+		};
 		BFE9684923007B0200865BCA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFE9682A23007B0000865BCA /* Project object */;
@@ -46,14 +60,21 @@
 			remoteGlobalIDString = BFE9683123007B0000865BCA;
 			remoteInfo = kohi;
 		};
-		BFE9685423007B0200865BCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFE9682A23007B0000865BCA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BFE9683123007B0000865BCA;
-			remoteInfo = kohi;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF281FB3231FE741009F9B63 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF281FB2231FE741009F9B63 /* Pods_kohi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		293293FCA3E6D79466BE7B55 /* Pods-kohiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohiUITests.debug.xcconfig"; path = "Target Support Files/Pods-kohiUITests/Pods-kohiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,19 +87,29 @@
 		B36DCFFD19529DB74DFF7CF4 /* Pods-kohi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kohi.release.xcconfig"; path = "Target Support Files/Pods-kohi/Pods-kohi.release.xcconfig"; sourceTree = "<group>"; };
 		BF1ABB6F2303318800026B65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BF1ABB71230332C600026B65 /* TastingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheet.swift; sourceTree = "<group>"; };
-		BF1ABB732303338600026B65 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		BF1ABB732303338600026B65 /* CoffeeMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMethod.swift; sourceTree = "<group>"; };
+		BF281FAB231EFCF7009F9B63 /* PreferencesForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesForm.swift; sourceTree = "<group>"; };
+		BF281FAD231F01EA009F9B63 /* GrindMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindMeasure.swift; sourceTree = "<group>"; };
+		BF281FAF231F0530009F9B63 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		BF281FC6231FF042009F9B63 /* kohiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF281FC8231FF042009F9B63 /* kohiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiUITests.swift; sourceTree = "<group>"; };
+		BF281FCA231FF042009F9B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF281FD0231FF225009F9B63 /* PreferenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceStore.swift; sourceTree = "<group>"; };
+		BF281FD2231FF5D1009F9B63 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		BF281FD62320179D009F9B63 /* GrindSizeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindSizeField.swift; sourceTree = "<group>"; };
+		BF281FD82320188D009F9B63 /* GrindTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindTexture.swift; sourceTree = "<group>"; };
 		BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetForm.swift; sourceTree = "<group>"; };
 		BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingSheetView.swift; sourceTree = "<group>"; };
 		BF3DA8012301902C00F71EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF4142882300BFEF00835453 /* TastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetView.swift; sourceTree = "<group>"; };
 		BF44CC4A230EB9F8003CC509 /* MethodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodImage.swift; sourceTree = "<group>"; };
-		BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		BF654D282301C58C00173379 /* kohi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kohi.entitlements; sourceTree = "<group>"; };
 		BF6CA7C92301B04B00851633 /* AppleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInButton.swift; sourceTree = "<group>"; };
 		BF7217452305620500F0EC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BF7217462305622900F0EC50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BF7217472305626800F0EC50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
+		BFAACEB72321350D00E0CBA0 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		BFE9683223007B0000865BCA /* kohi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kohi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9683523007B0000865BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9683723007B0000865BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,9 +120,6 @@
 		BFE9684823007B0200865BCA /* kohiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9684C23007B0200865BCA /* kohiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiTests.swift; sourceTree = "<group>"; };
 		BFE9684E23007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFE9685323007B0200865BCA /* kohiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kohiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFE9685723007B0200865BCA /* kohiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kohiUITests.swift; sourceTree = "<group>"; };
-		BFE9685923007B0200865BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE9686723007D3400865BCA /* TastingSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingSheetStore.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TastingSheetRow.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		BFE9686D23007FA100865BCA /* EditTastingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTastingSheetView.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 0; };
@@ -102,12 +130,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF281FC3231FF042009F9B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFE9682F23007B0000865BCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF546003230764C100CD9619 /* AwaitKit in Frameworks */,
-				04F745DF1D73877C36C7DC5A /* Pods_kohi.framework in Frameworks */,
+				BF281FB1231FE741009F9B63 /* Pods_kohi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,14 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5701108FDA917579BA2BC96 /* Pods_kohiTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFE9685023007B0200865BCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				20D54E14F083F5678BF94BF0 /* Pods_kohiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +172,21 @@
 			children = (
 				BF1ABB6F2303318800026B65 /* User.swift */,
 				BF1ABB71230332C600026B65 /* TastingSheet.swift */,
-				BF1ABB732303338600026B65 /* Method.swift */,
+				BF1ABB732303338600026B65 /* CoffeeMethod.swift */,
+				BF281FAD231F01EA009F9B63 /* GrindMeasure.swift */,
+				BF281FD2231FF5D1009F9B63 /* Preference.swift */,
+				BF281FD82320188D009F9B63 /* GrindTexture.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		BF281FC7231FF042009F9B63 /* kohiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF281FC8231FF042009F9B63 /* kohiUITests.swift */,
+				BF281FCA231FF042009F9B63 /* Info.plist */,
+			);
+			path = kohiUITests;
 			sourceTree = "<group>";
 		};
 		BF800A6023074CCB0069DE62 /* Component */ = {
@@ -157,6 +196,8 @@
 				BF3D2E8D2303648900ED9E62 /* TastingSheetForm.swift */,
 				BFE9686B23007F7C00865BCA /* TastingSheetRow.swift */,
 				BF44CC4A230EB9F8003CC509 /* MethodImage.swift */,
+				BF281FAB231EFCF7009F9B63 /* PreferencesForm.swift */,
+				BF281FD62320179D009F9B63 /* GrindSizeField.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -179,8 +220,17 @@
 				BF3D2E8F230367C000ED9E62 /* NewTastingSheetView.swift */,
 				BFEF39182301FCE7001F9859 /* TastingSheetListView.swift */,
 				BF4142882300BFEF00835453 /* TastingSheetView.swift */,
+				BF281FAF231F0530009F9B63 /* PreferencesView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BFAACEB6232134EF00E0CBA0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BFAACEB72321350D00E0CBA0 /* StringUtil.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		BFE9682923007B0000865BCA = {
@@ -188,7 +238,7 @@
 			children = (
 				BFE9683423007B0000865BCA /* kohi */,
 				BFE9684B23007B0200865BCA /* kohiTests */,
-				BFE9685623007B0200865BCA /* kohiUITests */,
+				BF281FC7231FF042009F9B63 /* kohiUITests */,
 				BFE9683323007B0000865BCA /* Products */,
 				D931F6D9DAFAEC66A06C3255 /* Pods */,
 				3D46170613CD54A22DADCF7F /* Frameworks */,
@@ -200,7 +250,7 @@
 			children = (
 				BFE9683223007B0000865BCA /* kohi.app */,
 				BFE9684823007B0200865BCA /* kohiTests.xctest */,
-				BFE9685323007B0200865BCA /* kohiUITests.xctest */,
+				BF281FC6231FF042009F9B63 /* kohiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +258,7 @@
 		BFE9683423007B0000865BCA /* kohi */ = {
 			isa = PBXGroup;
 			children = (
+				BFAACEB6232134EF00E0CBA0 /* Utility */,
 				BF654D282301C58C00173379 /* kohi.entitlements */,
 				BF3E80DF2306FEAC005CEBB7 /* GoogleService-Info.plist */,
 				BFE9684323007B0200865BCA /* Info.plist */,
@@ -239,16 +290,6 @@
 			path = kohiTests;
 			sourceTree = "<group>";
 		};
-		BFE9685623007B0200865BCA /* kohiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BFE9685723007B0200865BCA /* kohiUITests.swift */,
-				BFE9685923007B0200865BCA /* Info.plist */,
-				BF545FFF230761DE00CD9619 /* TestPlan.xctestplan */,
-			);
-			path = kohiUITests;
-			sourceTree = "<group>";
-		};
 		BFEB607A2306E55000BBBDE8 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +305,7 @@
 			children = (
 				BFE9686723007D3400865BCA /* TastingSheetStore.swift */,
 				BFEF391C23022312001F9859 /* UserStore.swift */,
+				BF281FD0231FF225009F9B63 /* PreferenceStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -284,6 +326,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF281FC5231FF042009F9B63 /* kohiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF281FCD231FF042009F9B63 /* Build configuration list for PBXNativeTarget "kohiUITests" */;
+			buildPhases = (
+				BF281FC2231FF042009F9B63 /* Sources */,
+				BF281FC3231FF042009F9B63 /* Frameworks */,
+				BF281FC4231FF042009F9B63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF281FCC231FF042009F9B63 /* PBXTargetDependency */,
+			);
+			name = kohiUITests;
+			productName = kohiUITests;
+			productReference = BF281FC6231FF042009F9B63 /* kohiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BFE9683123007B0000865BCA /* kohi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE9685C23007B0200865BCA /* Build configuration list for PBXNativeTarget "kohi" */;
@@ -294,6 +354,7 @@
 				BFE9683023007B0000865BCA /* Resources */,
 				A66918873DA2B70950C9E9B0 /* [CP] Embed Pods Frameworks */,
 				BF6064DD2306E03800C38A22 /* ShellScript */,
+				BF281FB3231FE741009F9B63 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,25 +387,6 @@
 			productReference = BFE9684823007B0200865BCA /* kohiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BFE9685223007B0200865BCA /* kohiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFE9686223007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiUITests" */;
-			buildPhases = (
-				6AB55AEE226D98C1B6E741B1 /* [CP] Check Pods Manifest.lock */,
-				BFE9684F23007B0200865BCA /* Sources */,
-				BFE9685023007B0200865BCA /* Frameworks */,
-				BFE9685123007B0200865BCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFE9685523007B0200865BCA /* PBXTargetDependency */,
-			);
-			name = kohiUITests;
-			productName = kohiUITests;
-			productReference = BFE9685323007B0200865BCA /* kohiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,14 +397,14 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Thibaut;
 				TargetAttributes = {
+					BF281FC5231FF042009F9B63 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BFE9683123007B0000865BCA;
+					};
 					BFE9683123007B0000865BCA = {
 						CreatedOnToolsVersion = 11.0;
 					};
 					BFE9684723007B0200865BCA = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = BFE9683123007B0000865BCA;
-					};
-					BFE9685223007B0200865BCA = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = BFE9683123007B0000865BCA;
 					};
@@ -387,12 +429,19 @@
 			targets = (
 				BFE9683123007B0000865BCA /* kohi */,
 				BFE9684723007B0200865BCA /* kohiTests */,
-				BFE9685223007B0200865BCA /* kohiUITests */,
+				BF281FC5231FF042009F9B63 /* kohiUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF281FC4231FF042009F9B63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFE9683023007B0000865BCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,39 +461,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFE9685123007B0200865BCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF546000230761DE00CD9619 /* TestPlan.xctestplan in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AB55AEE226D98C1B6E741B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kohiUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B4839BB8C4AC036B05AEFA9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,22 +545,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF281FC2231FF042009F9B63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF281FC9231FF042009F9B63 /* kohiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFE9682E23007B0000865BCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF1ABB72230332C600026B65 /* TastingSheet.swift in Sources */,
 				BF1ABB702303318800026B65 /* User.swift in Sources */,
+				BF281FAC231EFCF7009F9B63 /* PreferencesForm.swift in Sources */,
 				BFE9683623007B0000865BCA /* AppDelegate.swift in Sources */,
 				BFE9683823007B0000865BCA /* SceneDelegate.swift in Sources */,
-				BF1ABB742303338600026B65 /* Method.swift in Sources */,
+				BF281FB0231F0530009F9B63 /* PreferencesView.swift in Sources */,
+				BF1ABB742303338600026B65 /* CoffeeMethod.swift in Sources */,
 				BFE9686E23007FA100865BCA /* EditTastingSheetView.swift in Sources */,
+				BF281FD72320179D009F9B63 /* GrindSizeField.swift in Sources */,
+				BF281FD1231FF225009F9B63 /* PreferenceStore.swift in Sources */,
+				BF281FD92320188D009F9B63 /* GrindTexture.swift in Sources */,
 				BF3DA8022301902C00F71EAD /* LoginView.swift in Sources */,
+				BF281FAE231F01EA009F9B63 /* GrindMeasure.swift in Sources */,
 				BF3D2E90230367C000ED9E62 /* NewTastingSheetView.swift in Sources */,
 				BF3D2E8E2303648900ED9E62 /* TastingSheetForm.swift in Sources */,
 				BFE9686C23007F7C00865BCA /* TastingSheetRow.swift in Sources */,
 				BFEF39192301FCE7001F9859 /* TastingSheetListView.swift in Sources */,
+				BFAACEB82321350D00E0CBA0 /* StringUtil.swift in Sources */,
 				BFE9686823007D3400865BCA /* TastingSheetStore.swift in Sources */,
+				BF281FD3231FF5D1009F9B63 /* Preference.swift in Sources */,
 				BF6CA7CA2301B04B00851633 /* AppleSignInButton.swift in Sources */,
 				BFE9683A23007B0000865BCA /* ContentView.swift in Sources */,
 				BF44CC4B230EB9F8003CC509 /* MethodImage.swift in Sources */,
@@ -558,26 +593,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFE9684F23007B0200865BCA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFE9685823007B0200865BCA /* kohiUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF281FCC231FF042009F9B63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE9683123007B0000865BCA /* kohi */;
+			targetProxy = BF281FCB231FF042009F9B63 /* PBXContainerItemProxy */;
+		};
 		BFE9684A23007B0200865BCA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BFE9683123007B0000865BCA /* kohi */;
 			targetProxy = BFE9684923007B0200865BCA /* PBXContainerItemProxy */;
-		};
-		BFE9685523007B0200865BCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BFE9683123007B0000865BCA /* kohi */;
-			targetProxy = BFE9685423007B0200865BCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -603,6 +630,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF281FCE231FF042009F9B63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U22E826S97;
+				INFOPLIST_FILE = kohiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kohi;
+			};
+			name = Debug;
+		};
+		BF281FCF231FF042009F9B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U22E826S97;
+				INFOPLIST_FILE = kohiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kohi;
+			};
+			name = Release;
+		};
 		BFE9685A23007B0200865BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -811,51 +877,18 @@
 			};
 			name = Release;
 		};
-		BFE9686323007B0200865BCA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 293293FCA3E6D79466BE7B55 /* Pods-kohiUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U22E826S97;
-				INFOPLIST_FILE = kohiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = kohi;
-			};
-			name = Debug;
-		};
-		BFE9686423007B0200865BCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA776A5BD7104BDC6E7D2C99 /* Pods-kohiUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U22E826S97;
-				INFOPLIST_FILE = kohiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.mottet.kohiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = kohi;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF281FCD231FF042009F9B63 /* Build configuration list for PBXNativeTarget "kohiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF281FCE231FF042009F9B63 /* Debug */,
+				BF281FCF231FF042009F9B63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BFE9682D23007B0000865BCA /* Build configuration list for PBXProject "kohi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -879,15 +912,6 @@
 			buildConfigurations = (
 				BFE9686023007B0200865BCA /* Debug */,
 				BFE9686123007B0200865BCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFE9686223007B0200865BCA /* Build configuration list for PBXNativeTarget "kohiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFE9686323007B0200865BCA /* Debug */,
-				BFE9686423007B0200865BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

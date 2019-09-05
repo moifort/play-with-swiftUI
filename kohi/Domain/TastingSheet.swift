@@ -2,7 +2,7 @@ import Foundation
 
 struct TastingSheet: Hashable, Identifiable {
     let id : String
-    let method: Method
+    let method: CoffeeMethod
     let coffee: String
     let coffeeGrindSize: Int?
     let coffeeWeightInGrams: Int?

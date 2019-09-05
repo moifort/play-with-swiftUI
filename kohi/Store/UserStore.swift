@@ -136,4 +136,4 @@ struct UserCredential {
     var email: String
 }
 
-extension String: Error {}
+

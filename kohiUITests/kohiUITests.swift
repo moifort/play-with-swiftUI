@@ -2,7 +2,7 @@
 //  kohiUITests.swift
 //  kohiUITests
 //
-//  Created by Thibaut on 11/08/2019.
+//  Created by Thibaut on 04/09/2019.
 //  Copyright © 2019 Thibaut. All rights reserved.
 //
 
@@ -28,7 +28,6 @@ class kohiUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

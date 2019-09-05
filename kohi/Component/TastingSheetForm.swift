@@ -1,16 +1,9 @@
-//
-//  TastingSheetForm.swift
-//  kohi
-//
-//  Created by Thibaut on 13/08/2019.
-//  Copyright © 2019 Thibaut. All rights reserved.
-//
 
 import SwiftUI
 
 struct TastingSheetForm: View {
     @Binding var id : String
-    @Binding var method : Method
+    @Binding var methodId : String
     @Binding var grindSize : Int
     @Binding var coffee : String
     @Binding var time: Int?
@@ -18,9 +11,9 @@ struct TastingSheetForm: View {
     
     var body: some View {
         Form {
-            Picker("Method", selection: $method) {
-                ForEach(Method.allCases, id: \.self) { method in
-                    Text(method.rawValue).tag(method)
+            Picker("Method", selection: $methodId) {
+                ForEach(CoffeeMethod.allCases) { method in
+                    Text(method.label).tag(method.id)
                 }
             }
             
@@ -28,13 +21,7 @@ struct TastingSheetForm: View {
                 HStack {
                     TextField("Name", text: $coffee)
                 }
-                Stepper(value: $grindSize, in: 0...100) {
-                    HStack {
-                        Text("Grind")
-                        Spacer()
-                        Text("\(grindSize)")
-                    }
-                }
+                GrindSizeField(grindSize: $grindSize)
                 Stepper(value: $weight, in: 0...200, step: 5) {
                     HStack {
                         Text("Weight (Gram)")
@@ -53,13 +40,13 @@ struct TastingSheetForm_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TastingSheetForm(id: .constant("id"),
-                             method: .constant(Method.aeropress),
+                             methodId: .constant("moka"),
                              grindSize: .constant(20),
                              coffee: .constant(""),
                              time: .constant(nil),
                              weight: .constant(45)).environment(\.locale, Locale(identifier: "fr"))
             TastingSheetForm(id: .constant("id"),
-                             method: .constant(Method.aeropress),
+                             methodId: .constant("aeropress"),
                              grindSize: .constant(12),
                              coffee: .constant(""),
                              time: .constant(20),
@@ -69,3 +56,4 @@ struct TastingSheetForm_Previews: PreviewProvider {
     }
 }
 #endif
+

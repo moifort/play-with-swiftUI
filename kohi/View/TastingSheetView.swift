@@ -9,14 +9,14 @@ struct TastingSheetView: View {
         Form {
             Section(header: Text("METHOD")) {
                 HStack(alignment: .top) {
-                    MethodImage(image: tastingSheet.method.rawValue)
+                    MethodImage(image: tastingSheet.method.image)
                     VStack(alignment: .leading) {
-                        Text(tastingSheet.method.rawValue.capitalizingFirstLetter()).font(.headline)
+                        Text(tastingSheet.method.label.capitalized).font(.headline)
                     }.padding(.leading)
                 }.padding(.all)
             }
             
-            Section(header: Text("COFFEE")) {
+          /*  Section(header: Text("COFFEE")) {
                 VStack(alignment: .leading) {
                     Text("Name").foregroundColor(.secondary).font(.subheadline)
                     Text(tastingSheet.coffee)
@@ -34,13 +34,14 @@ struct TastingSheetView: View {
                         Text("\(tastingSheet.coffeeWeightInGrams!) ") + Text("grams")
                     }
                 }
-            }
+            }*/
         }.navigationBarTitle(Text("Detail"), displayMode: .inline)
             .navigationBarItems(trailing: editButton)
             .sheet(isPresented: $showingNewTastingSheet) {
                 EditTastingSheetView(update: self.update,
+                                     isTextureDisplay: true,
                                      id: self.tastingSheet.id,
-                                     method: self.tastingSheet.method,
+                                     methodId: self.tastingSheet.method.id,
                                      coffee: self.tastingSheet.coffee,
                                      grindSize: self.tastingSheet.coffeeGrindSize == nil ? 0 : self.tastingSheet.coffeeGrindSize!,
                                      weight: self.tastingSheet.coffeeWeightInGrams == nil ? 0 : self.tastingSheet.coffeeWeightInGrams!)
@@ -54,10 +55,10 @@ struct TastingSheetView: View {
        }
 }
 
-#if DEBUG
+
 struct TastingSheetView_Previews: PreviewProvider {
     static let tastingSheet = TastingSheet(id: "id",
-                                           method: Method.chemex,
+                                           method: CoffeeMethod.aeropress,
                                            coffee: "Voluto",
                                            coffeeGrindSize: 20,
                                            coffeeWeightInGrams: 150,
@@ -72,17 +73,5 @@ struct TastingSheetView_Previews: PreviewProvider {
              TastingSheetView(tastingSheet: tastingSheet).environment(\.locale, Locale(identifier: "fr"))
         }
        
-    }
-}
-#endif
-
-
-extension String {
-    func capitalizingFirstLetter() -> String {
-        return prefix(1).capitalized + dropFirst()
-    }
-    
-    mutating func capitalizeFirstLetter() {
-        self = self.capitalizingFirstLetter()
     }
 }

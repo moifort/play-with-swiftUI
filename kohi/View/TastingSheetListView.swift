@@ -4,18 +4,27 @@ import Firebase
 struct TastingSheetListView: View {
     @EnvironmentObject private var userStore: UserStore
     @EnvironmentObject private var tastingSheetsStore: TastingSheetsStore
-
+    @EnvironmentObject private var preferenceStore: PreferenceStore
+    
     @State var showingNewTastingSheet = false
+    @State var showingPreferences = false
     
     var addButton: some View {
         Button(action: { self.showingNewTastingSheet.toggle() }) {
             Text("Add Sheet")
+        }.sheet(isPresented: $showingNewTastingSheet) {
+            NewTastingSheetView(add: self.tastingSheetsStore.add).environmentObject(self.preferenceStore)
         }
     }
     
-    var logoutButton: some View {
-        Button(action: { self.userStore.logout() }) {
-            Text("Logout")
+    var preferencesButton: some View {
+        Button(action: { self.showingPreferences.toggle() }) {
+            Image(systemName: "person.circle").imageScale(.large).padding(.trailing, 30)
+        }.sheet(isPresented: $showingPreferences) {
+            PreferencesView(logout: self.userStore.logout,
+                            update: self.preferenceStore.update,
+                            grindMeasureId: self.preferenceStore.preference.grindMeasure.id)
+            
         }
     }
     
@@ -24,7 +33,7 @@ struct TastingSheetListView: View {
             List {
                 ForEach(tastingSheetsStore.tastingSheets) { tastingSheet in
                     NavigationLink(destination: TastingSheetView(tastingSheet: tastingSheet, update: self.tastingSheetsStore.update)) {
-                    TestingSheetRow(tastingSheet: tastingSheet).padding(.all, 5)
+                        TestingSheetRow(tastingSheet: tastingSheet).padding(.all, 5)
                     }
                 }.onDelete { indexSet in
                     let toDelete = self.tastingSheetsStore.tastingSheets[indexSet.first!]
@@ -32,10 +41,10 @@ struct TastingSheetListView: View {
                 }
             }
             .navigationBarTitle(Text("Tasting sheets"))
-            .navigationBarItems(leading: logoutButton, trailing: addButton)
-            .sheet(isPresented: $showingNewTastingSheet) { NewTastingSheetView(add: self.tastingSheetsStore.add) }
+            .navigationBarItems(leading: preferencesButton, trailing: addButton)
         }.onAppear() {
-            self.tastingSheetsStore.fetchAndListen()
+            self.tastingSheetsStore.fetchAndListen(userId: self.userStore.userId)
+            self.preferenceStore.fetch(userId: self.userStore.userId)
         }
     }
 }
@@ -45,7 +54,7 @@ struct TastingSheetListView: View {
 struct TastingSheetListView_Previews: PreviewProvider {
     static let sheets = [
         TastingSheet(id: "00",
-                     method: Method.moka,
+                     method: CoffeeMethod.aeropress,
                      coffee: "Brazilia",
                      coffeeGrindSize: 18,
                      coffeeWeightInGrams: 150,
@@ -54,7 +63,7 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      waterTemperatureInCelsius: 75,
                      tasteRatingOutOf5: 5),
         TastingSheet(id: "01",
-                     method: Method.v60,
+                     method: CoffeeMethod.aeropress,
                      coffee: "Voluto",
                      coffeeGrindSize: 25,
                      coffeeWeightInGrams: 200,
@@ -63,7 +72,7 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      waterTemperatureInCelsius: 80,
                      tasteRatingOutOf5: 5),
         TastingSheet(id: "02",
-                     method: Method.aeropress,
+                     method: CoffeeMethod.moka,
                      coffee: "Brazila from testotesra",
                      coffeeGrindSize: 20,
                      coffeeWeightInGrams: 150,
@@ -73,7 +82,7 @@ struct TastingSheetListView_Previews: PreviewProvider {
                      tasteRatingOutOf5: 5)
     ]
     
-    static let store = TastingSheetsStore(userId: "", tastingSheets: sheets)
+    static let store = TastingSheetsStore(tastingSheets: sheets)
     
     static var previews: some View {
         Group {

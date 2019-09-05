@@ -6,7 +6,8 @@ struct ContentView: View {
     var body : some View {
         Group {
             if (userStore.isLogged && !userStore.userId.isEmpty) {
-                TastingSheetListView().environmentObject(TastingSheetsStore(userId: userStore.userId))
+                TastingSheetListView().environmentObject(TastingSheetsStore())
+                    .environmentObject(PreferenceStore())
             }  else {
                 LoginView(login: userStore.login)
             }

@@ -2,20 +2,21 @@ import SwiftUI
 
 struct EditTastingSheetView: View {
     var update : (String, String, String, Int?, Int?) -> Void = {_, _,_,_,_ in}
+    let isTextureDisplay : Bool
     @Environment(\.presentationMode) var presentationMode
     
     @State var id : String = ""
-    @State var method : Method = Method.moka
-    @State var coffee : String = ""
-    @State var grindSize : Int = 0
-    @State var weight : Int = 0
+    @State var methodId  = CoffeeMethod.default.id
+    @State var coffee  = ""
+    @State var grindSize  = 0
+    @State var weight  = 0
     @State var time : Int? = nil
     
     
     var body: some View {
         NavigationView {
             TastingSheetForm(id: $id,
-                             method: $method,
+                             methodId: $methodId,
                              grindSize: $grindSize,
                              coffee: $coffee,
                              time: $time,
@@ -29,7 +30,7 @@ struct EditTastingSheetView: View {
     var saveButton: some View {
         Button(action: {
             self.update(self.id,
-                        self.method.rawValue,
+                        self.methodId,
                         self.coffee,
                         self.grindSize == 0 ? nil : self.grindSize,
                         self.weight == 0 ? nil : self.weight)
@@ -47,8 +48,8 @@ struct EditTastingSheetView: View {
 struct EditTastingSheetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            EditTastingSheetView()
-            EditTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
+            EditTastingSheetView(isTextureDisplay: true)
+            EditTastingSheetView(isTextureDisplay: true).environment(\.locale, Locale(identifier: "fr"))
         }
         
     }

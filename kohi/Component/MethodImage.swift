@@ -28,10 +28,10 @@ struct MethodImage: View {
 struct MethodImage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ForEach(Method.allCases, id: \.self) { method in
+            ForEach(CoffeeMethod.allCases) { method in
                 Group {
-                    MethodImage(image: method.rawValue)
-                    MethodImage(image: method.rawValue).environment(\.colorScheme, .dark)
+                    MethodImage(image: method.image)
+                    MethodImage(image: method.image).environment(\.colorScheme, .dark)
                 }
             }
         }.previewLayout(.sizeThatFits)

@@ -5,13 +5,13 @@ struct TestingSheetRow : View {
     
     var body: some View {
         HStack(alignment: .top) {
-            MethodImage(image: tastingSheet.method.rawValue)
+            MethodImage(image: tastingSheet.method.image)
             VStack(alignment: .leading, spacing: 4) {
                 HStack{
-                    Text(tastingSheet.coffee).font(.headline)
+                    Text(tastingSheet.coffee)
                 }.lineLimit(1)
                 HStack {
-                    VStack(spacing: 2) {
+                    VStack(spacing: 3) {
                         if (tastingSheet.coffeeGrindSize != nil) {
                             HStack {
                                 Image(systemName: "circle.grid.hex.fill")
@@ -26,73 +26,12 @@ struct TestingSheetRow : View {
                                 Spacer()
                             }
                         }
-                        if (tastingSheet.coffeeInfusionTimeInSeconds != nil) {
-                            HStack {
-                                Image(systemName: "alarm")
-                                Text("\(tastingSheet.coffeeInfusionTimeInSeconds!)s")
-                                Spacer()
-                            }
-                        }
                     }
-                }.font(.caption).foregroundColor(.secondary)
+                }.foregroundColor(.secondary)
             }
         }
     }
 }
-
-/* VStack(alignment: .leading, spacing: 4) {
- VStack(alignment: .leading){
- Text(tastingSheet.coffee).font(.headline)
- }.lineLimit(1)
- 
- HStack(alignment: .top) {
- VStack(spacing: 4) {
- if (tastingSheet.coffeeGrindSize != nil) {
- HStack {
- Image(systemName: "circle.grid.hex.fill")
- Text("\(tastingSheet.coffeeGrindSize!)")
- Spacer()
- }
- }
- if (tastingSheet.coffeeWeightInGrams != nil) {
- HStack {
- Image(systemName: "g.circle")
- Text("\(tastingSheet.coffeeWeightInGrams!)g")
- Spacer()
- }
- }
- if (tastingSheet.coffeeInfusionTimeInSeconds != nil) {
- HStack {
- Image(systemName: "alarm")
- Text("\(tastingSheet.coffeeInfusionTimeInSeconds!)s")
- Spacer()
- }
- }
- Spacer()
- }.font(.caption).foregroundColor(.secondary)
- VStack(spacing: 4) {
- if (tastingSheet.waterQuantityInMilliliters != nil) {
- HStack {
- Image(systemName: "rhombus")
- Text("\(tastingSheet.waterQuantityInMilliliters!)ml")
- Spacer()
- }
- }
- if (tastingSheet.waterTemperatureInCelsius != nil) {
- HStack {
- Image(systemName: "thermometer")
- Text(" \(tastingSheet.waterTemperatureInCelsius!)°C")
- Spacer()
- }
- }
- Spacer()
- }.font(.caption).foregroundColor(.secondary)
- 
- }
- 
- }.padding(.leading, 10)*/
-
-
 
 
 #if DEBUG
@@ -101,7 +40,7 @@ struct TestingSheetRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TestingSheetRow(tastingSheet: TastingSheet(id: "id",
-                                                       method: Method.chemex,
+                                                       method: CoffeeMethod.chemex,
                                                        coffee: "OUaaaa qsdjkl qslkj qdslkj qsdlkj qsldkj qslkjd qlskjd qskj qsdklj",
                                                        coffeeGrindSize: nil,
                                                        coffeeWeightInGrams: nil,
@@ -111,7 +50,7 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        tasteRatingOutOf5: nil)).previewLayout(.sizeThatFits)
             
             TestingSheetRow(tastingSheet: TastingSheet(id: "id",
-                                                       method: Method.chemex,
+                                                       method: CoffeeMethod.moka,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: nil,
                                                        coffeeWeightInGrams: nil,
@@ -121,7 +60,7 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        tasteRatingOutOf5: nil)).previewLayout(.sizeThatFits)
             
             TestingSheetRow(tastingSheet: TastingSheet(id: "id",
-                                                       method: Method.chemex,
+                                                       method: CoffeeMethod.aeropress,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: 20,
                                                        coffeeWeightInGrams: 150,
@@ -131,14 +70,14 @@ struct TestingSheetRow_Previews: PreviewProvider {
                                                        tasteRatingOutOf5: 5)).previewLayout(.sizeThatFits)
             
             TestingSheetRow(tastingSheet: TastingSheet(id: "id",
-                                                       method: Method.chemex,
+                                                       method: CoffeeMethod.v60,
                                                        coffee: "OUaaaa",
                                                        coffeeGrindSize: 20,
                                                        coffeeWeightInGrams: 150,
                                                        coffeeInfusionTimeInSeconds: 120,
                                                        waterQuantityInMilliliters: 10,
                                                        waterTemperatureInCelsius: 75,
-                                                       tasteRatingOutOf5: 5)).previewLayout(.sizeThatFits).environment(\.colorScheme, .dark)
+                                                       tasteRatingOutOf5: 5)).environment(\.colorScheme, .dark).previewLayout(.sizeThatFits)
         }
         
         

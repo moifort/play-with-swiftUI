@@ -47,6 +47,16 @@
                ReferencedContainer = "container:kohi.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF281FB7231FEF50009F9B63"
+               BuildableName = "kohiUITests1.xctest"
+               BlueprintName = "kohiUITests1"
+               ReferencedContainer = "container:kohi.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

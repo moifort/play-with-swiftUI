@@ -4,16 +4,16 @@ struct NewTastingSheetView: View {
     @Environment(\.presentationMode) var presentationMode
     var add : (String, String, Int?, Int?) -> Void = {_, _, _, _ in }
     @State var id : String = ""
-    @State var method : Method = Method.moka
-    @State var grindSize : Int = 20
-    @State var coffee : String = ""
-    @State var weight : Int = 40
+    @State var methodId = CoffeeMethod.default.id
+    @State var grindSize = 20
+    @State var coffee = ""
+    @State var weight = 40
     @State var time : Int? = nil
     
     var body: some View {
         NavigationView {
             TastingSheetForm(id: $id,
-                             method: $method,
+                             methodId: $methodId,
                              grindSize: $grindSize,
                              coffee: $coffee,
                              time: $time,
@@ -30,7 +30,7 @@ struct NewTastingSheetView: View {
     
     var addButton: some View {
         Button(action: {
-            self.add(self.method.rawValue, self.coffee, self.grindSize, self.weight)
+            self.add(self.methodId, self.coffee, self.grindSize, self.weight)
             self.presentationMode.wrappedValue.dismiss()
         }, label: { Text("Add") }).disabled(self.coffee.count == 0)
     }
@@ -43,7 +43,7 @@ struct NewTastingSheetView_Previews: PreviewProvider {
             NewTastingSheetView()
             NewTastingSheetView().environment(\.locale, Locale(identifier: "fr"))
         }
-
+        
     }
 }
 #endif
